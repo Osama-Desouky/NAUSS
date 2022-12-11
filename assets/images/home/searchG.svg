@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="searchG" transform="translate(639)">
+    <g id="search-normal_twotone" data-name="search-normal/twotone" transform="translate(-639)">
+      <g id="vuesax_twotone_search-normal" data-name="vuesax/twotone/search-normal">
+        <g id="search-normal">
+          <path id="Vector" d="M14.867,7.434A7.434,7.434,0,1,1,7.434,0,7.434,7.434,0,0,1,14.867,7.434Z" transform="translate(4.066 4.066)" fill="none" stroke="#c6aa76" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Vector-2" data-name="Vector" d="M3.066,3.066,0,0" transform="translate(18.934 18.934)" fill="none" stroke="#c6aa76" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" opacity="0.4"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

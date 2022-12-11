@@ -1,0 +1,40 @@
+$font-ar: "nauss-regular";
+$font-en: "nauss-regular";
+
+$font-path: "../fonts/";
+$img-path: "../images/";
+
+// colors schema
+$mainColor: #005F61;
+$mainGold: #C6AA76;
+$bgF2F2F2:#F2F2F2;
+$p00192E: #00192E;
+
+
+
+
+
+$theme-colors: (
+  // "primary": $primary-color,
+  // "warning": $orange-color,
+  // "success": $green-color,
+  // "gray": $gray-color,
+  // "red": $red-color
+);
+
+// font weight
+$w-thin: 100; // (Hairline)
+$w-extra-light: 200; // (Ultra Light)
+$w-light: 300;
+$w-normal: 400; // (Regular)
+$w-medium: 500;
+$w-semi-bold: 600; // (Semi Bold)
+$w-bold: 700;
+$w-extra-bold: 800; // (Ultra Bold)
+$w-black: 900; //(Heavy)
+
+
+
+//more 
+
+$raduis-normal : 8px;
