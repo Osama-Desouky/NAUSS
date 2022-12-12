@@ -232,7 +232,7 @@ input::placeholder {
 }
 
 .positionAbsolute, .btnMain::after,
-.readMore::after, .readMore2::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .eventsSec::after, .NFooter .importantlinks li a:hover::after {
+.readMore::after, .readMore2::after, .videoPl strong::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .eventsSec::after, .NFooter .importantlinks li a:hover::after {
   position: absolute;
   content: "";
 }
@@ -416,77 +416,61 @@ a:hover {
 
 @-webkit-keyframes playVideo {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background: transparent;
-  }
-  25% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-    border: 1px solid rgba(255, 255, 255, 0.174);
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   50% {
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    background: transparent;
-  }
-  75% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    border: 0px solid rgba(255, 255, 255, 0.05);
-    background: transparent;
-  }
-  85% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    border: 0px solid rgba(255, 255, 255, 0.05);
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.25);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    border: 0px solid rgba(255, 255, 255, 0.05);
-    background: rgba(255, 255, 255, 0.445);
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
 }
 
 @keyframes playVideo {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background: transparent;
-  }
-  25% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-    border: 1px solid rgba(255, 255, 255, 0.174);
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   50% {
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    background: transparent;
-  }
-  75% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    border: 0px solid rgba(255, 255, 255, 0.05);
-    background: transparent;
-  }
-  85% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    border: 0px solid rgba(255, 255, 255, 0.05);
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.25);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   100% {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@-webkit-keyframes playVideoAfter {
+  0% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    border: 0px solid rgba(255, 255, 255, 0.05);
-    background: rgba(255, 255, 255, 0.445);
+  }
+  100% {
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes playVideoAfter {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+    border: 1px solid rgba(255, 255, 255, 0);
   }
 }
 
@@ -501,7 +485,6 @@ a:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  border: 1px solid white;
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -512,11 +495,30 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 10px;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+  position: relative;
+}
+
+.videoPl strong::after {
+  width: 110%;
+  height: 110%;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .videoPl strong:hover {
-  -webkit-animation: playVideo linear 1s 1 forwards;
-          animation: playVideo linear 1s 1 forwards;
+  -webkit-animation: playVideo .5s linear .3s 1 forwards;
+          animation: playVideo .5s linear .3s 1 forwards;
+}
+
+.videoPl strong:hover::after {
+  -webkit-animation: playVideoAfter .5s linear 0s 1 forwards;
+          animation: playVideoAfter .5s linear 0s 1 forwards;
 }
 
 .readMore3 {
