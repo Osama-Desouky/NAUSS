@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="timer" transform="translate(-1390.758 -4074.084)">
+    <rect id="base" width="38" height="38" rx="10" transform="translate(1390.758 4074.084)" fill="none"/>
+    <g id="timer-1" transform="translate(1392.285 4074.829)">
+      <path id="Path_124280" data-name="Path 124280" d="M31.7,18.723A14.223,14.223,0,1,1,17.473,4.5,14.228,14.228,0,0,1,31.7,18.723Z" transform="translate(0 1.564)" fill="none" stroke="#c6aa76" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_124281" data-name="Path 124281" d="M12,8v8.127" transform="translate(5.473 3.753)" fill="none" stroke="#c6aa76" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_124282" data-name="Path 124282" d="M9,2h9.753" transform="translate(3.597)" fill="none" stroke="#c6aa76" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
