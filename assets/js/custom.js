@@ -122,6 +122,40 @@ let swiper5 = new Swiper(".swip5Items", {
     prevEl: ".swiper-button-prev",
   },
 });
+let swiper4 = new Swiper(".swip4Items", {
+  slidesPerView: 4,
+  spaceBetween: 22,
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+ 
+    },
+    // when window width is >= 480px
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 640px
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1300: {
+      slidesPerView: 4,
+
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 
 let swiperEvent = new Swiper(".swiperEvents", {
@@ -244,7 +278,11 @@ var swiper = new Swiper(".SwiperThum", {
   watchSlidesProgress: true,
 });
 var swiper2555 = new Swiper(".SwiperGallery", {
-  loop: false,
+  loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: true,
+  },
   spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -260,9 +298,61 @@ var swiper2555 = new Swiper(".SwiperGallery", {
 
 
 
+$('.videoPlay').click(function(e) {
+  e.preventDefault()
+  $(this).addClass('playVideo').next().trigger('play').on('ended',function() {
+    $(this).prev().removeClass('playVideo')
+  }); 
+  // $('video').trigger('pause');
+})
+$('.videoPlayBox').click(function(e) {
+  e.preventDefault()
+  $(this).addClass('PLsmBox').next().trigger('play').attr('controls', ''); 
+})
+
+var mySwiperThumb = new Swiper(".swiper-twoHome2", {
+  loop: false,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var mySwiper2 = new Swiper(".homeBanner2", {
+  loop: false,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  thumbs: {
+    swiper: mySwiperThumb,
+  },
+});
+
+let counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
+    
+let $counters = $(".counter");
 
 
 
+/* Start counting, do this on DOM ready or with Waypoints. */
+$counters.each(function (ignore, counter) {
+  let waypoint = new Waypoint({
+    element: $(this),
+    handler: function () {
+      counterUp(counter, {
+              duration: 2000,
+              delay: 10
+            });
+            // this.destroy();
+          },
+          offset: 'bottom-in-view',
+        });
+      });
 
 // AOS.init({
 //   duration: 1000,
