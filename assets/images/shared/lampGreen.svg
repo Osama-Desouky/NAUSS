@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="268" height="268" viewBox="0 0 268 268">
+  <g id="lampGreen" transform="translate(-1213 -3520)">
+    <path id="Path_124326" data-name="Path 124326" d="M134,0A134,134,0,1,1,0,134,134,134,0,0,1,134,0Z" transform="translate(1213 3520)" fill="#005f61"/>
+    <g id="Group_56325" data-name="Group 56325" transform="translate(0 7.585)">
+      <path id="interface-lighting-light-bulb-on--lighting-light-shine-incandescent-bulb-lights" d="M101.627,74.994A36.112,36.112,0,1,0,49.42,107.185v17.746a4.023,4.023,0,0,0,4.024,3.921H77.587a4.023,4.023,0,0,0,4.024-3.921V106.875a36.112,36.112,0,0,0,20.017-31.881ZM65.515.81V16.287m41.27-.722L95.849,26.6M130.311,47.55H114.834M24.245,15.565,35.181,26.6M.72,47.55H16.2" transform="translate(1281.484 3572.52)" fill="none" stroke="#c6aa76" stroke-width="5"/>
+      <g id="Rectangle_14031" data-name="Rectangle 14031" transform="translate(1335 3706.5)" fill="none" stroke="#c6aa76" stroke-width="5">
+        <path d="M0,0H24a0,0,0,0,1,0,0V7a6,6,0,0,1-6,6H6A6,6,0,0,1,0,7V0A0,0,0,0,1,0,0Z" stroke="none"/>
+        <path d="M2.5,2.5h19a0,0,0,0,1,0,0V7A3.5,3.5,0,0,1,18,10.5H6A3.5,3.5,0,0,1,2.5,7V2.5A0,0,0,0,1,2.5,2.5Z" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
