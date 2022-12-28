@@ -210,7 +210,7 @@ input::placeholder {
 }
 
 .flexCenter, .plusMin, .customMenu .langMenu > a, .customMenu .langMenu .dropdown-menu li.spliter,
-.customMenu .langMenu .dropdown-menu li.spliter ~ li, .NewFullBanner .newsSlideWarp .NSTxt, .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .fromTo strong, .ourPartners .partBox .logoPart, .bannerImg2 {
+.customMenu .langMenu .dropdown-menu li.spliter ~ li, .NewFullBanner .newsSlideWarp .NSTxt, .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .fromTo strong, .ourPartners .partBox .logoPart, .bannerImg2, .universityPresidents .UPbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +248,7 @@ input::placeholder {
 .positionAbsolute, .btnMainGold::after,
 .btnMain::after,
 .readMore2::after,
-.readMore::after, .videoPl strong::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .PLbox .hiddenTxt::after, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .bgGrayWithPattern::after, .eventsSec::after, .NFooter .importantlinks li a:hover::after, .bgBreadcrumb .breadcrumbCum a::after, .bannerImg2::after, .progTxtBg::after, .progTxtBg .progTxt .videoProg .videoPl, .progTxtBg .progTxt .videoProg .videoPl::after, .progTxtBg .progTxt .videoProg .videoPl strong, .aimUl li::after, .bannerTraining .swiperControlTraining .swiper-pagination-bullet.swiper-pagination-bullet-active::after, .PublicationInvitations .PIimg::after, .aboutPageLine .container::after, .aboutPageLine .titleAPL::after, .aboutPageLine .titleAPL::before, .contentSlider .sliderWithFansyBox .fancyboxImg::after, .shareBG .contentShare::after {
+.readMore::after, .videoPl strong::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .PLbox .hiddenTxt::after, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .bgGrayWithPattern::after, .eventsSec::after, .NFooter .importantlinks li a:hover::after, .bgBreadcrumb .breadcrumbCum a::after, .bannerImg2::after, .progTxtBg::after, .progTxtBg .progTxt .videoProg .videoPl, .progTxtBg .progTxt .videoProg .videoPl::after, .progTxtBg .progTxt .videoProg .videoPl strong, .aimUl li::after, .bannerTraining .swiperControlTraining .swiper-pagination-bullet.swiper-pagination-bullet-active::after, .PublicationInvitations .PIimg::after, .aboutPageLine .container::after, .aboutPageLine .titleAPL::after, .aboutPageLine .titleAPL::before, .contentSlider .sliderWithFansyBox .fancyboxImg::after, .shareBG .contentShare::after, .universityPresidents .UPbox::after, .universityPresidents .UPbox .fromTo .dividing::after {
   position: absolute;
   content: "";
 }
@@ -1514,7 +1514,7 @@ table tbody tr:nth-child(odd) {
 }
 
 .customMenu .searchMenu .megamenu .flexCenter, .customMenu .searchMenu .megamenu .plusMin, .customMenu .searchMenu .megamenu .langMenu > a, .customMenu .searchMenu .megamenu .langMenu .dropdown-menu li.spliter, .customMenu .langMenu .dropdown-menu .searchMenu .megamenu li.spliter,
-.customMenu .searchMenu .megamenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .searchMenu .megamenu li.spliter ~ li, .customMenu .searchMenu .megamenu .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .megamenu .NSTxt, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .customMenu .searchMenu .megamenu .fromTo, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .customMenu .searchMenu .megamenu strong, .customMenu .searchMenu .megamenu .ourPartners .partBox .logoPart, .ourPartners .partBox .customMenu .searchMenu .megamenu .logoPart, .customMenu .searchMenu .megamenu .bannerImg2 {
+.customMenu .searchMenu .megamenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .searchMenu .megamenu li.spliter ~ li, .customMenu .searchMenu .megamenu .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .megamenu .NSTxt, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .customMenu .searchMenu .megamenu .fromTo, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .customMenu .searchMenu .megamenu strong, .customMenu .searchMenu .megamenu .ourPartners .partBox .logoPart, .ourPartners .partBox .customMenu .searchMenu .megamenu .logoPart, .customMenu .searchMenu .megamenu .bannerImg2, .customMenu .searchMenu .megamenu .universityPresidents .UPbox, .universityPresidents .customMenu .searchMenu .megamenu .UPbox {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -3996,13 +3996,13 @@ table tbody tr:nth-child(odd) {
 }
 
 .contentSlider .flexCenter, .contentSlider .plusMin, .contentSlider .customMenu .langMenu > a, .customMenu .contentSlider .langMenu > a, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter,
-.contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li, .contentSlider .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt, .contentSlider .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .contentSlider .fromTo, .contentSlider .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .contentSlider strong, .contentSlider .ourPartners .partBox .logoPart, .ourPartners .partBox .contentSlider .logoPart, .contentSlider .bannerImg2 {
+.contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li, .contentSlider .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt, .contentSlider .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .contentSlider .fromTo, .contentSlider .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .contentSlider strong, .contentSlider .ourPartners .partBox .logoPart, .ourPartners .partBox .contentSlider .logoPart, .contentSlider .bannerImg2, .contentSlider .universityPresidents .UPbox, .universityPresidents .contentSlider .UPbox {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
 }
 
-.contentSlider .flexCenter .date, .contentSlider .plusMin .date, .contentSlider .customMenu .langMenu > a .date, .customMenu .contentSlider .langMenu > a .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li .date, .contentSlider .NewFullBanner .newsSlideWarp .NSTxt .date, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt .date, .contentSlider .eventsSec .eventWapper .fromTo .date, .eventsSec .eventWapper .contentSlider .fromTo .date, .eventsSec .eventWapper .fromTo .contentSlider strong .date, .contentSlider .ourPartners .partBox .logoPart .date, .ourPartners .partBox .contentSlider .logoPart .date, .contentSlider .bannerImg2 .date {
+.contentSlider .flexCenter .date, .contentSlider .plusMin .date, .contentSlider .customMenu .langMenu > a .date, .customMenu .contentSlider .langMenu > a .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li .date, .contentSlider .NewFullBanner .newsSlideWarp .NSTxt .date, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt .date, .contentSlider .eventsSec .eventWapper .fromTo .date, .eventsSec .eventWapper .contentSlider .fromTo .date, .eventsSec .eventWapper .fromTo .contentSlider strong .date, .contentSlider .ourPartners .partBox .logoPart .date, .ourPartners .partBox .contentSlider .logoPart .date, .contentSlider .bannerImg2 .date, .contentSlider .universityPresidents .UPbox .date, .universityPresidents .contentSlider .UPbox .date {
   margin-left: 10px;
 }
 
@@ -4097,6 +4097,171 @@ table tbody tr:nth-child(odd) {
   width: 80%;
   margin: 0 auto;
   height: 611px;
+}
+
+.imgPatter1 {
+  max-width: 413px;
+  max-height: 423px;
+  padding-top: 48px;
+  padding-right: 38px;
+  background: transparent url(../images/people/perArt1.svg) no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.imgPatter1 img {
+  max-width: 375px;
+  max-height: 375px;
+  border-radius: 8px;
+}
+
+.rectorsSpeech {
+  padding: 45px 0 80px;
+}
+
+.rectorsSpeech .headingFX {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.rectorsSpeech .contentSpeech .p20 {
+  margin-bottom: 17px;
+}
+
+.rectorsSpeech .contentSpeech .FlexL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  clear: both;
+  padding-bottom: 15px;
+  padding-left: 100px;
+}
+
+.rectorsSpeech .contentSpeech .FlexL .p18 {
+  color: #c6aa76;
+}
+
+.rectorsSpeech .contentSpeech .FlexL .font30, .rectorsSpeech .contentSpeech .FlexL .loadMore {
+  margin-top: 20px;
+}
+
+.rectorsSpeech .scaleX {
+  float: left;
+  clear: both;
+  display: block;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.universityPresidents {
+  padding: 50px 80px;
+}
+
+.universityPresidents .UPbox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.universityPresidents .UPbox::after {
+  width: 2px;
+  height: 100%;
+  background: #005F61;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.universityPresidents .UPbox .imgPatter1 {
+  background-color: #fff;
+}
+
+.universityPresidents .UPbox .imgPatter1 img {
+  display: inline-block;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.universityPresidents .UPbox .imgPatter1:hover img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.universityPresidents .UPbox:last-of-type {
+  padding-bottom: 0px;
+}
+
+.universityPresidents .UPbox img {
+  border-radius: 8px;
+}
+
+.universityPresidents .UPbox .font35 {
+  margin: 45px 0 20px;
+  border: 2px solid #C6AA76;
+  background: #ffff;
+  border-radius: 32px;
+  padding: 10px 40px;
+  min-width: 574px;
+  text-align: center;
+}
+
+.universityPresidents .UPbox .fromTo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.universityPresidents .UPbox .fromTo .font20, .universityPresidents .UPbox .fromTo .sildeTabs .nav-pills .nav-link, .sildeTabs .nav-pills .universityPresidents .UPbox .fromTo .nav-link {
+  margin: 0;
+  color: #C6AA76;
+  font-family: 'NAUSS-Bold';
+  line-height: 22px;
+  width: 70px;
+  text-align: left;
+}
+
+.universityPresidents .UPbox .fromTo .font20:last-of-type, .universityPresidents .UPbox .fromTo .sildeTabs .nav-pills .nav-link:last-of-type, .sildeTabs .nav-pills .universityPresidents .UPbox .fromTo .nav-link:last-of-type {
+  text-align: right;
+}
+
+.universityPresidents .UPbox .fromTo .dividing {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 2px solid #005F61;
+  position: relative;
+}
+
+.universityPresidents .UPbox .fromTo .dividing::after {
+  width: 15px;
+  height: 15px;
+  background: #C6AA76;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+}
+
+.memberDetails {
+  padding: 25px 0 125px;
 }
 
 @media (min-width: 1200px) {
@@ -4345,7 +4510,7 @@ table tbody tr:nth-child(odd) {
   .customMenu .searchMenu .megamenu input::placeholder {
     font-size: 16px;
   }
-  .customMenu .searchMenu .flexCenter a, .customMenu .searchMenu .plusMin a, .customMenu .searchMenu .langMenu > a a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter ~ li a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter ~ li a, .customMenu .searchMenu .NewFullBanner .newsSlideWarp .NSTxt a, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .NSTxt a, .customMenu .searchMenu .eventsSec .eventWapper .fromTo a, .eventsSec .eventWapper .customMenu .searchMenu .fromTo a, .eventsSec .eventWapper .fromTo .customMenu .searchMenu strong a, .customMenu .searchMenu .ourPartners .partBox .logoPart a, .ourPartners .partBox .customMenu .searchMenu .logoPart a, .customMenu .searchMenu .bannerImg2 a {
+  .customMenu .searchMenu .flexCenter a, .customMenu .searchMenu .plusMin a, .customMenu .searchMenu .langMenu > a a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter ~ li a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter ~ li a, .customMenu .searchMenu .NewFullBanner .newsSlideWarp .NSTxt a, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .NSTxt a, .customMenu .searchMenu .eventsSec .eventWapper .fromTo a, .eventsSec .eventWapper .customMenu .searchMenu .fromTo a, .eventsSec .eventWapper .fromTo .customMenu .searchMenu strong a, .customMenu .searchMenu .ourPartners .partBox .logoPart a, .ourPartners .partBox .customMenu .searchMenu .logoPart a, .customMenu .searchMenu .bannerImg2 a, .customMenu .searchMenu .universityPresidents .UPbox a, .universityPresidents .customMenu .searchMenu .UPbox a {
     margin-right: 21px;
   }
   .customMenu .navbar-light .navbar-toggler-icon {

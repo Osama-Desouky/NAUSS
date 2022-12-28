@@ -3345,3 +3345,137 @@ table {
     }
   }
 }
+
+.imgPatter1 {
+  max-width: 413px;
+  max-height: 423px;
+  padding-top: 48px;
+  padding-right: 38px;
+  background: transparent url(../images/people/perArt1.svg) no-repeat;
+  background-position: top right;
+  background-size: contain;
+  img {
+    max-width: 375px;
+    max-height: 375px;
+    border-radius: 8px;
+  }
+}
+.rectorsSpeech {
+  padding: 45px 0 80px;
+  .headingFX {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .contentSpeech {
+    .p20 {
+      margin-bottom: 17px;
+    }
+   .FlexL {
+    display: flex;
+    justify-content: left;
+    clear: both;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    .p18  {
+      color: #c6aa76;
+    }
+    .font30 {
+      margin-top: 20px;
+    }
+   }
+  }
+  .scaleX {
+    float: left;
+    clear: both;
+    display: block;
+    transform: scaleX(-1);
+  }
+}
+
+.universityPresidents {
+  padding: 50px 80px;
+  .UPbox {
+    @extend .flexCenter;
+    flex-direction: column;
+    padding-bottom: 80px;
+    position: relative;
+    
+    &::after {
+      @extend .positionAbsolute;
+      width: 2px;
+      height: 100%;
+      background: #005F61;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: -1;
+    }
+    .imgPatter1 {
+      background-color: #fff;
+      img {
+       display: inline-block;
+       transition: .25s;
+      }
+      &:hover {
+        img {
+          transform: scale(1.08);
+        }
+      }
+    }
+    &:last-of-type {
+      padding-bottom: 0px;
+    }
+    img {
+      border-radius: 8px;
+    }
+    .font35 {
+      margin: 45px 0 20px;
+      border: 2px solid #C6AA76;
+      background: #ffff;
+      border-radius: 32px;
+      padding: 10px 40px;
+      min-width: 574px;
+      text-align: center;
+    }
+    .fromTo {
+      display: flex;
+      align-items: center;
+      .font20 {
+        margin: 0;
+        color: #C6AA76;
+        font-family: 'NAUSS-Bold';
+        line-height: 22px;
+        width: 70px;
+        text-align: left;
+        &:last-of-type {
+          text-align: right;
+        }
+      }
+      .dividing {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: #ffffff;
+        border-radius: 50%;
+        margin: 0 10px;
+        border: 2px solid #005F61;
+        position: relative;
+        &::after {
+          @extend .positionAbsolute;
+          width: 15px;
+          height: 15px;
+          background: #C6AA76;
+          top: 3px;
+          left: 3px;
+          border-radius:50% ;
+        }
+      }
+    }
+  } 
+}
+
+.memberDetails {
+  padding: 25px 0 125px;
+  
+}
