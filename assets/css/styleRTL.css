@@ -375,7 +375,7 @@ input::placeholder {
           justify-content: center;
 }
 
-.flexSpaceBetween, .subsBox, .NFooter .socialFooter, .advantSec .forTwoFlex, .bannerTraining .swiperTrainingThumb .swiper-wrapper {
+.flexSpaceBetween, .subsBox, .NFooter .socialFooter, .advantSec .forTwoFlex, .bannerTraining .swiperTrainingThumb .swiper-wrapper, .memberDetails .contextMem .aimUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2945,11 +2945,12 @@ table tbody tr:nth-child(odd) {
 
 .aimUl li .p18 {
   margin-bottom: 0;
+  line-height: normal;
 }
 
 .aimUl li::after {
   right: 0;
-  top: 8px;
+  top: 5px;
   width: 12px;
   height: 12px;
   border: 3px solid #C6AA76;
@@ -2975,7 +2976,7 @@ table tbody tr:nth-child(odd) {
 }
 
 .aimProg .aimUl li::after {
-  top: 16px;
+  top: 23px;
   right: 20px;
 }
 
@@ -3488,7 +3489,7 @@ table tbody tr:nth-child(odd) {
   margin-bottom: 25px;
 }
 
-.servCenterBG .flexSpaceBetween, .servCenterBG .subsBox, .servCenterBG .NFooter .socialFooter, .NFooter .servCenterBG .socialFooter, .servCenterBG .advantSec .forTwoFlex, .advantSec .servCenterBG .forTwoFlex, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper {
+.servCenterBG .flexSpaceBetween, .servCenterBG .subsBox, .servCenterBG .NFooter .socialFooter, .NFooter .servCenterBG .socialFooter, .servCenterBG .advantSec .forTwoFlex, .advantSec .servCenterBG .forTwoFlex, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper, .servCenterBG .memberDetails .contextMem .aimUl, .memberDetails .contextMem .servCenterBG .aimUl {
   padding-right: 30px;
 }
 
@@ -4415,6 +4416,51 @@ table tbody tr:nth-child(odd) {
 
 .memberDetails {
   padding: 25px 0 125px;
+}
+
+.memberDetails .flexMD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.memberDetails .nameOfMem {
+  padding-right: 37px;
+  padding-top: 90px;
+}
+
+.memberDetails .nameOfMem .p18 {
+  color: #C6AA76;
+}
+
+.memberDetails .contextMem {
+  margin-bottom: 25px;
+}
+
+.memberDetails .contextMem .font40 {
+  line-height: 50px;
+  margin-bottom: 17px;
+  direction: ltr;
+}
+
+.memberDetails .contextMem .p20 {
+  color: #555555;
+  margin: 0;
+}
+
+.memberDetails .contextMem .aimUl {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.memberDetails .contextMem .aimUl li {
+  width: 50%;
+  line-height: normal;
+}
+
+.memberDetails .contextMem .aimUl li::after {
+  top: 12px;
 }
 
 @media (min-width: 1200px) {

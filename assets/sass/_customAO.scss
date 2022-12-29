@@ -2189,11 +2189,12 @@ table {
     }
     .p18 {
       margin-bottom: 0;
+      line-height: normal;
     }
     &::after {
       @extend .positionAbsolute;
       #{$start-direction}: 0;
-      top: 8px;
+      top: 5px;
       width: 12px;
       height: 12px;
       border: 3px solid $mainGold;
@@ -2215,7 +2216,7 @@ table {
         background: #002d2e0d;
       }
       &::after {
-        top: 16px;
+        top: 23px;
         #{$start-direction}: 20px;
       }
     }
@@ -3477,5 +3478,39 @@ table {
 
 .memberDetails {
   padding: 25px 0 125px;
-  
+  .flexMD {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .nameOfMem {
+    padding-right: 37px;
+    padding-top: 90px;
+    .p18 {
+      color: #C6AA76;
+    }
+  }
+  .contextMem {
+    margin-bottom: 25px;
+    .font40 {
+      line-height: 50px;
+      margin-bottom: 17px;
+      direction: ltr;
+    }
+    .p20 {
+      color: #555555;
+      margin: 0;
+    }
+    .aimUl {
+      @extend .flexSpaceBetween;
+      flex-wrap: wrap;
+ 
+      li {
+        width: 50%;
+        line-height: normal;
+        &::after {
+          top: 12px;
+        }
+      }
+    }
+  }
 }
