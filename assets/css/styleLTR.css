@@ -154,6 +154,11 @@ ol li {
   float: left !important;
 }
 
+.contrast {
+  -webkit-filter: contrast(1.5);
+          filter: contrast(1.5);
+}
+
 .starting-p {
   font-size: 3.5rem;
   font-family: "NAUSS-Bold";
@@ -209,7 +214,8 @@ ol li {
   -webkit-filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
           filter: drop-shadow(0 3px 25px rgba(0, 0, 0, 0.08));
   width: 100%;
-  height: 520px;
+  min-height: 520px;
+  height: calc(100% - 40px);
   margin-bottom: 40px;
 }
 
@@ -236,7 +242,7 @@ ol li {
 .council-card .content-box h4 {
   font-size: 2.1rem;
   font-family: "NAUSS-Bold";
-  line-height: 35px;
+  min-height: 35px;
   color: #005F61;
   margin-bottom: 3px;
 }
@@ -259,10 +265,13 @@ ol li {
 }
 
 .council-card.main-card {
+  width: 372px;
   height: 598px;
+  margin: auto;
   position: relative;
   background-color: transparent;
   margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .council-card.main-card::before {
@@ -305,6 +314,56 @@ ol li {
 
 .council-card.main-card .content-box h4 {
   margin-top: -3px;
+}
+
+@media (max-width: 1399.98px) {
+  .council-card {
+    min-height: auto;
+  }
+  .council-card .img-box {
+    height: 270px;
+  }
+  .council-card .content-box h4 {
+    font-size: 1.8rem;
+  }
+  .council-card .content-box p {
+    font-size: 1.4rem;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .starting-p {
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+  .title-with-arrow {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .title-with-arrow::before {
+    width: 10px;
+    top: 13px;
+  }
+  .council-card.main-card {
+    width: 310px;
+    height: 505px;
+  }
+  .council-card.main-card::before {
+    width: 320px;
+    left: -40px;
+  }
+  .council-card.main-card .img-box {
+    height: 350px;
+  }
+}
+
+@media (max-width: 574.98px) {
+  .council-card.main-card::before {
+    width: 275px;
+    left: -20px;
+    top: -35px;
+  }
 }
 
 body {
