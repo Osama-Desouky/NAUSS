@@ -1,3 +1,8 @@
+// contrast
+.contrast{
+    filter: contrast(1.5);
+  }
+
 .starting-p{
     font-size: 3.5rem;
     font-family: "NAUSS-Bold";
@@ -48,7 +53,8 @@
     filter: drop-shadow(0 3px 25px rgba($color: #000000, $alpha: 0.08));
     // box-shadow: 0 3px 25px rgba($color: #000000, $alpha: 0.08);
     width: 100%;
-    height: 520px;
+    min-height: 520px;
+    height: calc(100% - 40px);
     margin-bottom: 40px;
     .img-box{
         width: 100%;
@@ -67,7 +73,7 @@
         h4{
             font-size: 2.1rem;
             font-family: "NAUSS-Bold";
-            line-height: 35px;
+            min-height: 35px;
             color: $mainColor;
             margin-bottom: 3px;
         }
@@ -91,11 +97,14 @@
     }
 
     &.main-card{
+        width: 372px;
         height: 598px;
+        margin: auto;
         position: relative;
         background-color: transparent;
         // overflow: hidden;
         margin-top: 70px;
+        margin-bottom: 40px;
         &::before{
                 content: "";
                 position: absolute;
@@ -147,5 +156,67 @@
                 margin-top: -3px;
             }
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1399.98px){
+    .council-card{
+        min-height: auto;
+        .img-box{
+           height: 270px;
+       }
+       .content-box {
+        h4{
+            font-size: 1.8rem;
+        }
+         p {
+            font-size: 1.4rem;
+            line-height: 16px;
+         }
+       }
+    }
+}
+
+@media(max-width:1199.98px){}
+@media(max-width:991.98px){
+    .starting-p {
+        font-size: 2.5rem;
+        line-height: 35px;
+    }
+    .title-with-arrow {
+        font-size: 2rem;
+        line-height: 35px;
+        &::before{
+            width: 10px;
+            top: 13px;
+        }
+    }
+    .council-card.main-card{
+        width: 310px;
+        height: 505px;
+        &::before {
+            width: 320px;
+            #{$start-direction}: -40px;
+        }
+        .img-box {
+            height: 350px;
+        }
+    }
+}
+@media(max-width:767.98px){}
+@media(max-width:574.98px){
+    .council-card.main-card::before {
+        width: 275px;
+        #{$start-direction}: -20px;
+        top: -35px;
     }
 }

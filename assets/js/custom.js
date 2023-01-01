@@ -393,3 +393,40 @@ $(document).ready(function () {
 $(window).on('load',function(){
     $(".loader-container").fadeOut();
 });
+
+// color func
+$(".change-colors").on("click", function (e) {
+  $("body").toggleClass("contrast");
+
+  e.stopPropagation();
+ 
+});
+
+
+
+  /* --- Font sizing Function --- */
+  $('#increaseFont').click(function(){
+    modifyFontSize('html','increase');
+  });
+  $('#decreaseFont').click(function(){
+    modifyFontSize('html','decrease')
+  });
+
+
+  function modifyFontSize(MyElement,flag){
+
+    var HtmlElement = $(MyElement);
+    var currentFontSize = parseInt (HtmlElement.css('font-size'));
+    
+    if (flag =='increase' & currentFontSize < 13 )
+        currentFontSize += 1;
+    else if (flag == 'decrease' & currentFontSize >= 11 )
+        currentFontSize -= 1;
+    else if (flag == 'reset')
+    currentFontSize = 10;
+
+    HtmlElement.css('font-size', currentFontSize);
+
+    // console.log(currentFontSize);
+
+  }
