@@ -34,10 +34,10 @@
 @media (max-width:1700px) {
 	.container {
 
-		border: 1px solid red;
+		// border: 1px solid red;
 	}
 	.whiteBoxOffer {
-		padding: 30px 65px;
+		padding:30px 48px;
 	}
 	.whiteBoxOffer:hover img {
 		transform: scaleX(1.2) scaleY(1.1);
@@ -63,18 +63,10 @@
 
 
 @media (max-width:1201px) {
-	.aboutPageLine .container {
-		max-width: 95%;
-	}
-	.aboutPageLine .row:nth-child(odd) .flexTextCenterHeight, .aboutPageLine .row:nth-child(odd) .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .row:nth-child(odd) .PITxt {
-		margin-right: 0;
-	}
-	.aboutPageLine .imgAPL img {
-		padding: 41px 8px 0 8px;
-	}
+
 	.container {
 		max-width: 1200px;
-		border: 1px solid green;
+		// border: 1px solid green;
 	}
 	.topMenu {
 		a {
@@ -197,7 +189,42 @@
 			}
 		}
 	}
-	
+	.aboutPageLine .container {
+		max-width: 95%;
+	}
+	.aboutPageLine .row:nth-child(odd) .flexTextCenterHeight, .aboutPageLine .row:nth-child(odd) .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .row:nth-child(odd) .PITxt {
+		margin-right: 0;
+	}
+	.aboutPageLine .imgAPL img {
+		padding: 41px 8px 0 8px;
+	}
+	.bannerSeurtiySC .swiperTrainingThumb .swiper-wrapper {
+		zoom: 0.7;
+	}
+	.bannerTraining .sliderBoxText {
+		padding: 10px;
+	}
+	.bannerTraining .sliderBoxText .font50 {
+		font-size: 35px;
+	}
+	.bannerTraining .sliderBoxText .p20 {
+		font-size: 1.5rem;
+	}
+	.btnMainGold, .btnMain, .readMore2, .readMore {
+		font-size: 1.4rem;
+	}
+	.PublicationInvitations .container {
+		width: 100%;
+	}
+	.linksCom  {
+		.col-md-6 {
+			    width: 100%;
+		}
+		.col-md-3 {
+			width: 50%;
+		}
+	}
+
   /* end 1201px */
 
 }
@@ -479,6 +506,69 @@
 	}
 	.universityPresidents .UPbox .font35 {
 		min-width: 100%;
+	}
+	.bannerTraining  {
+		height: auto;
+		padding-top: 20px !important;
+		.col-md-5,
+		.col-md-7,
+		.col-md-6 {
+			width: 100%;
+		}
+
+			
+
+	}
+	.bannerTraining .sliderBoxText span.p20 {
+		margin-right: 0;
+	}
+	.bannerTraining .sliderBoxText .font50 {
+		padding: 30px 0 5px;
+	}
+	.bannerSeurtiySC .sliderBoxText .numApso {
+		top: 0;
+	}
+	body .cyberSecurityBanner {
+		.wrapperSlideHm {
+			height: auto;
+			padding: 20px;
+		}
+	}
+	.PLbox {
+		height: 370px;
+	}
+	.PLbox .hiddenTxt::after {
+		width: 30px;
+		height: 30px;
+		background-size: 28px;
+	}
+	.PLbox:hover .hiddenTxt {
+		height: 100%;
+	}
+	.PLbox .hiddenTxt h3.font16 {
+		margin-bottom: 10px;
+	}
+	.PLbox .hiddenTxt p.font16 {
+		margin-bottom: 13px;
+		// height: 116px;
+		-webkit-line-clamp: 5;
+		line-height: 21px;
+		height: calc(21px * 5);
+	}
+	.PLbox .hiddenTxt .btnMainGold {
+		font-size: 1rem;
+	}
+	.servCenterBG .flexSpaceBetween {
+		display: block;
+		margin-bottom: 20px;
+		padding-right: 0px;
+	}
+	.servCenterBG .flexSpaceBetween .whiteBoxOffer{
+		margin-bottom: 20px;
+		min-height: auto;
+	}
+	.cyberSecurityBanner .txtSldes .p20 {
+		width: 100%;
 	}
     /* end 992px */
 }
@@ -907,7 +997,7 @@
 	}
 	.innerBanner {
 		.videoPl {
-			#{$end-direction}: 8%;
+			#{$end-direction}: 3%;
 		}
 	}
 	.programsList {
@@ -931,10 +1021,10 @@
 			width: 30px;
 		}
 		.FlexL {
-			padding-left: 0;
-			justify-content: center;
+			padding:0 !important;
+			justify-content: center !important;
 			.font30 {
-				margin-top: 0;
+				margin-top: 0 !important;
 			}
 		}
 	}
@@ -969,5 +1059,136 @@
 		height: 10px;
 
 	}
+	.aboutPageLine .row {
+		margin-bottom: 0;
+	}
+	.videoSec {
+		padding: 60px 0 110px 0;
+	}
+	.brifAbout .videoTxt {
+		height: 225px;
+	}
+	.cyberSecurityBanner {
+		
+	}
+	.videoSec .videoTxt {
+		height: 300px;
+		position: relative;
+	}
+	.publicationsCenter .PCbox {
+		margin-bottom: 0;
+	}
+	.trainSec {
+		padding: 0;
+		.slider4IText {
+			margin-top: 20px;
+		}
+	}
+	.scientificjournals .col-md-4 {
+		width: 50%;
+	}
+	.homeBanner2  .swiper2Style {
+		display: none;
+	}
+
     /* end 767px */
+}
+
+@media (max-width:500px) {
+	.cyberSecurityBanner .swiperTrainingThumb .swiper-wrapper {
+		zoom: 0.4;
+	}
+	.cyberSecurityBanner .wrapperSlideHm .container {
+		padding-right: 0px !important;
+	}
+	.bannerTraining:not(.bannerSeurtiySC) .swiperTrainingThumb .swiper-wrapper .swiper-slide {
+		width: 100% !important;
+		margin-bottom: 30px;
+	}
+	.bannerTraining .swiperTraining .swiper-wrapper .swiper-slide {
+		min-height: auto;
+	}
+	.bannerTraining:not(.bannerSeurtiySC)  .swiperTrainingThumb .swiper-wrapper .swiper-slide {
+		width: 100% !important;
+	}
+	.bannerTraining .sliderBoxTextThum .p20 {
+		overflow: hidden;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.resume-slider .item .img-box {
+		right: 10%;
+		top: 30px;
+		background: #fff;
+	}
+	.scientificjournals .col-md-4 {
+		width: 100%;
+	}
+
+	.linksCom  {
+		.linksSec .links {
+			padding: 10px;
+			a {
+				width: 100%;
+				font-size: 14px;
+			}
+		}
+		.col-md-3 {
+			width: 100%;
+			padding-right: 30px;
+
+		}
+		.font30 {
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+	}
+	.inventionBG .textInv img{
+		width: 30px;
+	}
+	.inventionBG .textInv {
+		padding-right: 9px;
+	}
+	.inventionBG .textInv .font30 {
+		line-height: 35px;
+	}
+	.bgBreadcrumb .breadcrumbCum {
+		flex-wrap: wrap;
+	}
+	.bannerTraining .sliderBoxText {
+		width: calc(100% - 40px);
+	}
+	.bannerTraining .swiperControlTraining .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+		width: 30px;
+	}
+	.bannerTraining .swiperControlTraining {
+		left: 30px;
+	}
+	.scientificjournals .boxPatter {
+		height: 400px;
+	}
+	.scientificjournals .boxPatter .boxImgMn {
+		height: 270px;
+	}
+	.scientificjournals .boxPatter:not(:hover) .boxTxtMn {
+		height: calc(100% - 270px);
+	}
+	.scientificjournals .boxPatter .boxTxtMn .p16 {
+		height: calc(30px * 5);
+		margin-bottom: 32px;
+	}
+	.PublicationInvitations .PIimg {
+		margin-bottom: 20px;
+	}
+	.progTxtBg .progTxt .videoProg .videoPl {
+		width: 100%;
+		height: auto;
+	}
+	.Subscription .p16 {
+		line-height: normal;
+	}
+	.bannerHome .wrapperSlideHm .font50 {
+		margin-bottom: 9px;
+		width: 100%;
+	}
 }

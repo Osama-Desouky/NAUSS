@@ -3902,6 +3902,7 @@ table tbody tr:nth-child(odd) {
   line-height: 36px;
   height: calc(36px * 2);
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .publicationsCenter .PCbox p strong.font18 {
@@ -4500,11 +4501,8 @@ table tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 1700px) {
-  .container {
-    border: 1px solid red;
-  }
   .whiteBoxOffer {
-    padding: 30px 65px;
+    padding: 30px 48px;
   }
   .whiteBoxOffer:hover img {
     -webkit-transform: scaleX(1.2) scaleY(1.1);
@@ -4532,18 +4530,8 @@ table tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 1201px) {
-  .aboutPageLine .container {
-    max-width: 95%;
-  }
-  .aboutPageLine .row:nth-child(odd) .flexTextCenterHeight, .aboutPageLine .row:nth-child(odd) .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .row:nth-child(odd) .PITxt, .aboutPageLine .row:nth-child(odd) .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .row:nth-child(odd) .PITxt {
-    margin-right: 0;
-  }
-  .aboutPageLine .imgAPL img {
-    padding: 41px 8px 0 8px;
-  }
   .container {
     max-width: 1200px;
-    border: 1px solid green;
   }
   .topMenu a {
     font-size: 12px;
@@ -4626,6 +4614,42 @@ table tbody tr:nth-child(odd) {
   }
   .resume-slider .owl-item .item .content-box .additional-data .value {
     font-size: 16px;
+  }
+  .aboutPageLine .container {
+    max-width: 95%;
+  }
+  .aboutPageLine .row:nth-child(odd) .flexTextCenterHeight, .aboutPageLine .row:nth-child(odd) .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .row:nth-child(odd) .PITxt, .aboutPageLine .row:nth-child(odd) .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .row:nth-child(odd) .PITxt {
+    margin-right: 0;
+  }
+  .aboutPageLine .imgAPL img {
+    padding: 41px 8px 0 8px;
+  }
+  .bannerSeurtiySC .swiperTrainingThumb .swiper-wrapper {
+    zoom: 0.7;
+  }
+  .bannerTraining .sliderBoxText {
+    padding: 10px;
+  }
+  .bannerTraining .sliderBoxText .font50 {
+    font-size: 35px;
+  }
+  .bannerTraining .sliderBoxText .p20 {
+    font-size: 1.5rem;
+  }
+  .btnMainGold,
+  .btnMain,
+  .readMore2,
+  .readMore {
+    font-size: 1.4rem;
+  }
+  .PublicationInvitations .container {
+    width: 100%;
+  }
+  .linksCom .col-md-6 {
+    width: 100%;
+  }
+  .linksCom .col-md-3 {
+    width: 50%;
   }
   /* end 1201px */
 }
@@ -4872,6 +4896,63 @@ table tbody tr:nth-child(odd) {
   }
   .universityPresidents .UPbox .font35 {
     min-width: 100%;
+  }
+  .bannerTraining {
+    height: auto;
+    padding-top: 20px !important;
+  }
+  .bannerTraining .col-md-5,
+  .bannerTraining .col-md-7,
+  .bannerTraining .col-md-6 {
+    width: 100%;
+  }
+  .bannerTraining .sliderBoxText span.p20 {
+    margin-right: 0;
+  }
+  .bannerTraining .sliderBoxText .font50 {
+    padding: 30px 0 5px;
+  }
+  .bannerSeurtiySC .sliderBoxText .numApso {
+    top: 0;
+  }
+  body .cyberSecurityBanner .wrapperSlideHm {
+    height: auto;
+    padding: 20px;
+  }
+  .PLbox {
+    height: 370px;
+  }
+  .PLbox .hiddenTxt::after {
+    width: 30px;
+    height: 30px;
+    background-size: 28px;
+  }
+  .PLbox:hover .hiddenTxt {
+    height: 100%;
+  }
+  .PLbox .hiddenTxt h3.font16 {
+    margin-bottom: 10px;
+  }
+  .PLbox .hiddenTxt p.font16 {
+    margin-bottom: 13px;
+    -webkit-line-clamp: 5;
+    line-height: 21px;
+    height: calc(21px * 5);
+  }
+  .PLbox .hiddenTxt .btnMainGold {
+    font-size: 1rem;
+  }
+  .servCenterBG .flexSpaceBetween, .servCenterBG .subsBox, .servCenterBG .NFooter .socialFooter, .NFooter .servCenterBG .socialFooter, .servCenterBG .advantSec .forTwoFlex, .advantSec .servCenterBG .forTwoFlex, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper, .servCenterBG .memberDetails .contextMem .aimUl, .memberDetails .contextMem .servCenterBG .aimUl {
+    display: block;
+    margin-bottom: 20px;
+    padding-right: 0px;
+  }
+  .servCenterBG .flexSpaceBetween .whiteBoxOffer, .servCenterBG .subsBox .whiteBoxOffer, .servCenterBG .NFooter .socialFooter .whiteBoxOffer, .NFooter .servCenterBG .socialFooter .whiteBoxOffer, .servCenterBG .advantSec .forTwoFlex .whiteBoxOffer, .advantSec .servCenterBG .forTwoFlex .whiteBoxOffer, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper .whiteBoxOffer, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper .whiteBoxOffer, .servCenterBG .memberDetails .contextMem .aimUl .whiteBoxOffer, .memberDetails .contextMem .servCenterBG .aimUl .whiteBoxOffer {
+    margin-bottom: 20px;
+    min-height: auto;
+  }
+  .cyberSecurityBanner .txtSldes .p20 {
+    width: 100%;
   }
   /* end 992px */
 }
@@ -5231,7 +5312,7 @@ table tbody tr:nth-child(odd) {
     border-bottom: 1px solid #005f611a;
   }
   .innerBanner .videoPl {
-    left: 8%;
+    left: 3%;
   }
   .programsList .tab-content .col-md-4 {
     width: 100%;
@@ -5251,13 +5332,13 @@ table tbody tr:nth-child(odd) {
     width: 30px;
   }
   .contentSpeech .FlexL {
-    padding-left: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding: 0 !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   .contentSpeech .FlexL .font30, .contentSpeech .FlexL .loadMore {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
   .contentSlider .sliderWithFansyBox .fancyboxImg::after {
     width: 39px;
@@ -5290,6 +5371,130 @@ table tbody tr:nth-child(odd) {
     width: 10px;
     height: 10px;
   }
+  .aboutPageLine .row {
+    margin-bottom: 0;
+  }
+  .videoSec {
+    padding: 60px 0 110px 0;
+  }
+  .brifAbout .videoTxt {
+    height: 225px;
+  }
+  .videoSec .videoTxt {
+    height: 300px;
+    position: relative;
+  }
+  .publicationsCenter .PCbox {
+    margin-bottom: 0;
+  }
+  .trainSec {
+    padding: 0;
+  }
+  .trainSec .slider4IText {
+    margin-top: 20px;
+  }
+  .scientificjournals .col-md-4 {
+    width: 50%;
+  }
+  .homeBanner2 .swiper2Style {
+    display: none;
+  }
   /* end 767px */
+}
+
+@media (max-width: 500px) {
+  .cyberSecurityBanner .swiperTrainingThumb .swiper-wrapper {
+    zoom: 0.4;
+  }
+  .cyberSecurityBanner .wrapperSlideHm .container {
+    padding-right: 0px !important;
+  }
+  .bannerTraining:not(.bannerSeurtiySC) .swiperTrainingThumb .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .bannerTraining .swiperTraining .swiper-wrapper .swiper-slide {
+    min-height: auto;
+  }
+  .bannerTraining:not(.bannerSeurtiySC) .swiperTrainingThumb .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+  .bannerTraining .sliderBoxTextThum .p20 {
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .resume-slider .item .img-box {
+    right: 10%;
+    top: 30px;
+    background: #fff;
+  }
+  .scientificjournals .col-md-4 {
+    width: 100%;
+  }
+  .linksCom .linksSec .links {
+    padding: 10px;
+  }
+  .linksCom .linksSec .links a {
+    width: 100%;
+    font-size: 14px;
+  }
+  .linksCom .col-md-3 {
+    width: 100%;
+    padding-right: 30px;
+  }
+  .linksCom .font30, .linksCom .loadMore {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .inventionBG .textInv img {
+    width: 30px;
+  }
+  .inventionBG .textInv {
+    padding-right: 9px;
+  }
+  .inventionBG .textInv .font30, .inventionBG .textInv .loadMore {
+    line-height: 35px;
+  }
+  .bgBreadcrumb .breadcrumbCum {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bannerTraining .sliderBoxText {
+    width: calc(100% - 40px);
+  }
+  .bannerTraining .swiperControlTraining .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    width: 30px;
+  }
+  .bannerTraining .swiperControlTraining {
+    left: 30px;
+  }
+  .scientificjournals .boxPatter {
+    height: 400px;
+  }
+  .scientificjournals .boxPatter .boxImgMn {
+    height: 270px;
+  }
+  .scientificjournals .boxPatter:not(:hover) .boxTxtMn {
+    height: calc(100% - 270px);
+  }
+  .scientificjournals .boxPatter .boxTxtMn .p16 {
+    height: calc(30px * 5);
+    margin-bottom: 32px;
+  }
+  .PublicationInvitations .PIimg {
+    margin-bottom: 20px;
+  }
+  .progTxtBg .progTxt .videoProg .videoPl {
+    width: 100%;
+    height: auto;
+  }
+  .Subscription .p16 {
+    line-height: normal;
+  }
+  .bannerHome .wrapperSlideHm .font50 {
+    margin-bottom: 9px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styleRTL.css.map */

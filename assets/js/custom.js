@@ -224,7 +224,7 @@ $(document).ready(function () {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 20,
       },
       // when window width is >= 480px
       700: {
@@ -361,10 +361,10 @@ $(document).ready(function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     thumbs: {
       swiper: swiperTrainingThumb,
     },
