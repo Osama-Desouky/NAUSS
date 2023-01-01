@@ -6,10 +6,14 @@ html {
   scroll-padding-top: 140px;
   font-size: 62.5%;
 }
+
 .customMenu .navbar {
   // display: none;
 }
-
+.row>* {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 //  start global style
 a {
   text-decoration: unset;
@@ -3201,7 +3205,7 @@ table {
       border-radius: 50%;
     }
     &::before {
-      #{$start-direction}: -23px;
+      #{$start-direction}: -30px;
       top: 12px;
       width: 25px;
       height: 25px;
@@ -3212,7 +3216,7 @@ table {
       background-color: $mainGold;
       width: 15px;
       height: 15px;
-      #{$start-direction}: -18px;
+      #{$start-direction}: -25px;
       top: 17px;
     }
   }

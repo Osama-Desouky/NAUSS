@@ -32,6 +32,10 @@
 	}
 }
 @media (max-width:1700px) {
+	.container {
+
+		border: 1px solid red;
+	}
 	.whiteBoxOffer {
 		padding: 30px 65px;
 	}
@@ -59,8 +63,18 @@
 
 
 @media (max-width:1201px) {
+	.aboutPageLine .container {
+		max-width: 95%;
+	}
+	.aboutPageLine .row:nth-child(odd) .flexTextCenterHeight, .aboutPageLine .row:nth-child(odd) .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .row:nth-child(odd) .PITxt {
+		margin-right: 0;
+	}
+	.aboutPageLine .imgAPL img {
+		padding: 41px 8px 0 8px;
+	}
 	.container {
 		max-width: 1200px;
+		border: 1px solid green;
 	}
 	.topMenu {
 		a {
@@ -139,42 +153,53 @@
 			}
 		}
 	}
-    /* end 1201px */
-	.resume-slider .owl-dots {
-		-webkit-box-pack: center;
+  
+	.resume-slider {
+		.owl-dots {
+			-webkit-box-pack: center;
 			-ms-flex-pack: center;
-				justify-content: center;
-		-ms-flex-flow: wrap;
+			justify-content: center;
+			-ms-flex-flow: wrap;
 			flex-flow: wrap;
-	  }
-	  .resume-slider .owl-dots li {
-		margin: 0 10px !important;
-	  }
-	  .resume-slider .owl-item .item .content-box {
-		padding-right: 60px;
-		padding-left: 15px;
-		padding-top: 50px;
-		padding-bottom: 15px;
-	  }
-	  .resume-slider .owl-item .item .content-box::before {
-		background-size: 50px;
-	  }
-	  .resume-slider .owl-item .item .content-box h3 {
-		font-size: 20px;
-		line-height: 30px;
-		height: calc(30px * 3);
-		margin-bottom: 10px;
-	  }
-	  .resume-slider .owl-item .item .content-box p {
-		font-size: 16px;
-		line-height: 23px;
-	  }
-	  .resume-slider .owl-item .item .content-box .additional-data .title {
-		font-size: 16px;
-	  }
-	  .resume-slider .owl-item .item .content-box .additional-data .value {
-		font-size: 16px;
-	  }
+			li {
+				margin: 0 10px !important;
+			}
+		}
+		.owl-item {
+			.item {
+				.content-box {
+					padding-right: 60px;
+					padding-left: 15px;
+					padding-top: 50px;
+					padding-bottom: 15px;
+					&::before {
+						background-size: 50px;
+					}
+					h3 {
+						font-size: 20px;
+						line-height: 30px;
+						height: calc(30px * 3);
+						margin-bottom: 10px;
+					}
+					p {
+						font-size: 16px;
+						line-height: 23px;
+					}
+					.additional-data {
+						.title {
+							font-size: 16px;
+						}
+						.value {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+  /* end 1201px */
+
 }
 
 
@@ -434,6 +459,27 @@
 			padding: 50px 40px;
 		}
 	}
+	.memberDetails .flexMD {
+		flex-direction: column;
+    	align-items: center;
+	}
+	.memberDetails .nameOfMem {
+		padding-right: 0;
+		padding-top: 30px;
+	}
+	.memberDetails .contextMem .aimUl li {
+		width: 100%;
+		line-height: normal;
+	}
+	.customMenu.menuBg.fixedTop .navbar-brand {
+		min-width: unset;
+	}
+	.universityPresidents {
+		padding: 50px 0;
+	}
+	.universityPresidents .UPbox .font35 {
+		min-width: 100%;
+	}
     /* end 992px */
 }
 
@@ -450,6 +496,9 @@
 	}
 	.font20BG {
 		font-size: 1.5rem;
+	}
+	.font35 {
+		font-size: 2.8rem;
 	}
 	.font40 {
 		font-size: 3rem;
@@ -487,6 +536,17 @@
 	}
 	.p20 {
 		font-size: 1.8rem;
+	}
+	.imgPatter1 img {
+		max-width: 280px;
+		max-height: 280px;
+	}
+	.aimUl li {
+		margin-bottom: 15px;
+	}
+	.memberDetails .contextMem .font40 {
+		line-height: 35px;
+		margin-bottom: 15px;
 	}
 	.heading {
 		.font20 {
@@ -866,5 +926,48 @@
         margin-bottom: 15px;
         margin-#{$start-direction}: 15px;
     }
+	.contentSpeech {
+		> img {
+			width: 30px;
+		}
+		.FlexL {
+			padding-left: 0;
+			justify-content: center;
+			.font30 {
+				margin-top: 0;
+			}
+		}
+	}
+	.contentSlider .sliderWithFansyBox .fancyboxImg::after {
+		width: 39px;
+		height: 35px;
+		background-size: 35px !important;
+	}
+	.contentVideo .video iframe {
+		width: 100%;
+		height: auto;
+		min-height: 200px;
+	}
+	.newsSection .newsBox .imgB {
+		height: 200px;
+	}
+	.aboutPageLine .titleAPL {
+		transform: translate(-5px, -19px);
+	}
+	.aboutPageLine .container {
+		max-width: 90%;
+	}
+	.aboutPageLine .flexTextCenterHeight, .aboutPageLine .PublicationInvitations .PITxt, .PublicationInvitations .aboutPageLine .PITxt {
+		margin-right: 0;
+	}
+	.aboutPageLine .titleAPL::before {
+		width: 20px;
+    	height: 20px;
+	}
+	.aboutPageLine .titleAPL::after {
+		width: 10px;
+		height: 10px;
+
+	}
     /* end 767px */
 }
