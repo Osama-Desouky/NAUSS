@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="ENIcon3" transform="translate(6.026 5.703)">
+    <circle id="Ellipse_11218" data-name="Ellipse 11218" cx="19" cy="19" r="19" transform="translate(-6.026 -5.703)" fill="#eee"/>
+    <g id="Group_56787" data-name="Group 56787">
+      <path id="Path_124588" data-name="Path 124588" d="M9.583,11.685a1.985,1.985,0,0,0-.36,0,4.854,4.854,0,1,1,.36,0Z" transform="translate(0.204)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_124589" data-name="Path 124589" d="M16.421,4a3.823,3.823,0,0,1,.142,7.643,1.233,1.233,0,0,0-.284,0" transform="translate(1.281 0.185)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" opacity="0.4"/>
+      <path id="Path_124590" data-name="Path 124590" d="M4.328,14.686c-2.642,1.769-2.642,4.652,0,6.41a10.664,10.664,0,0,0,10.93,0c2.642-1.769,2.642-4.652,0-6.41A10.714,10.714,0,0,0,4.328,14.686Z" transform="translate(0 1.029)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_124591" data-name="Path 124591" d="M18.34,20.551a5.282,5.282,0,0,0,2.14-.95,2.766,2.766,0,0,0,0-4.662A5.431,5.431,0,0,0,18.373,14" transform="translate(1.471 1.104)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" opacity="0.4"/>
+    </g>
+  </g>
+</svg>

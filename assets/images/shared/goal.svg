@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="goal" transform="translate(-12006.039 14344.279)">
+    <circle id="Ellipse_11220" data-name="Ellipse 11220" cx="19" cy="19" r="19" transform="translate(12006.039 -14344.279)" fill="#eee"/>
+    <g id="Group_56789" data-name="Group 56789" transform="translate(-7.681)">
+      <g id="Ellipse_11214" data-name="Ellipse 11214" transform="translate(12023.82 -14334.18)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="1.5">
+        <circle cx="8.899" cy="8.899" r="8.899" stroke="none"/>
+        <circle cx="8.899" cy="8.899" r="8.149" fill="none"/>
+      </g>
+      <g id="Ellipse_11215" data-name="Ellipse 11215" transform="translate(12026.961 -14331.039)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="1.5" opacity="0.5">
+        <circle cx="5.758" cy="5.758" r="5.758" stroke="none"/>
+        <circle cx="5.758" cy="5.758" r="5.008" fill="none"/>
+      </g>
+      <line id="Line_230" data-name="Line 230" y2="7.699" transform="translate(12032.72 -14336.273)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="Line_232" data-name="Line 232" x1="7.699" transform="translate(12036.014 -14325.279)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="Line_231" data-name="Line 231" y2="7.699" transform="translate(12032.72 -14321.986)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="Line_233" data-name="Line 233" x1="7.699" transform="translate(12021.727 -14325.279)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
