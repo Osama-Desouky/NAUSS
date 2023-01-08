@@ -1320,6 +1320,10 @@ table {
 .aboutPageLine .titleAPL,
 .sliderWithFansyBox,
 .impAchievement .impAchiWrap .ImpAchiBox .font40,
+.innerData > .p2Font,
+.innerDataBG .font40,
+.cuActions a span,
+.alert > div p,
 .swiperNewsFullBn {
   direction: ltr;
 }
@@ -4197,7 +4201,6 @@ table {
       margin: 0;
       margin-right: 13px;
       color: #002D2E;
-      direction: ltr;
     }
   }
   .btn-close {
@@ -4387,4 +4390,110 @@ table {
 			box-shadow: unset;
 		}
 	}
+}
+
+.cuActions {
+  a {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0;
+      margin-right: 12px;
+      color: #555555;
+      &:last-of-type {
+        color: #005F61;
+      }
+    }
+  }
+}
+.CUShare {
+  a {
+    margin-left: 20px;
+    border-radius: 4px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    display: inline-block;
+    &:hover {
+      background: #005F61;
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+.contactUsPage {
+  padding-top: 45px;
+  .CUDetails {
+    margin-bottom: 60px;
+    .cuActions,
+    .CUShare,
+    > .font40 {
+      margin-bottom: 20px;
+    }
+    .cuActions {
+      display: flex;
+      flex-wrap: wrap;
+      width: 45%;
+      a {
+        width: 50%;
+      }
+    }
+    > .p2Font {
+      color: #0B261F;
+      margin-bottom: 15px;
+    }
+    > .font25 {
+      color: #0B261F;
+    }
+  }
+  .CUform {
+    display: flex;
+    margin-bottom: 60px;
+    .formBg {
+      width: 50%;
+      padding: 30px 70px;
+      background: #F3F3F3;
+    }
+    .location {
+      width: 50%;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.innerData {
+  background: #F9F9F9;
+  border: 1px solid #E3E7EC;
+  margin-bottom: 40px;
+  padding: 33px 20px 30px;
+  // height: 350px;
+  transition: .25s;
+  > .p2Font {
+    display: inline-block;
+  }
+  &:hover {
+    background: #FFFFFF;
+    box-shadow: 0 8px 35px #51576126;
+  }
+  .font25 {
+    margin-bottom: 20px;
+    overflow: hidden;
+    line-height: 30px;
+    height: calc(30px * 2);
+  }
+  .cuActions {
+    margin-bottom: 36px;
+  }
+  .readMore2 {
+    padding-top: 9px;
+    padding-bottom: 4px;
+  }
+}
+.innerDataBG {
+  .font40 {
+    margin-bottom: 20px;
+  }
+
 }

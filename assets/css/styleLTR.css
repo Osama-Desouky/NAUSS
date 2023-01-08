@@ -2148,6 +2148,10 @@ table tbody tr:nth-child(odd) {
 .aboutPageLine .titleAPL,
 .sliderWithFansyBox,
 .impAchievement .impAchiWrap .ImpAchiBox .font40,
+.innerData > .p2Font,
+.innerDataBG .font40,
+.cuActions a span,
+.alert > div p,
 .swiperNewsFullBn {
   direction: ltr;
 }
@@ -5501,7 +5505,6 @@ table tbody tr:nth-child(odd) {
   margin: 0;
   margin-right: 13px;
   color: #002D2E;
-  direction: ltr;
 }
 
 .alert .btn-close {
@@ -5709,6 +5712,139 @@ table tbody tr:nth-child(odd) {
   color: #fff;
   -webkit-box-shadow: unset;
           box-shadow: unset;
+}
+
+.cuActions a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cuActions a span {
+  margin: 0;
+  margin-right: 12px;
+  color: #555555;
+}
+
+.cuActions a span:last-of-type {
+  color: #005F61;
+}
+
+.CUShare a {
+  margin-left: 20px;
+  border-radius: 4px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: inline-block;
+}
+
+.CUShare a:hover {
+  background: #005F61;
+}
+
+.CUShare a:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.contactUsPage {
+  padding-top: 45px;
+}
+
+.contactUsPage .CUDetails {
+  margin-bottom: 60px;
+}
+
+.contactUsPage .CUDetails .cuActions,
+.contactUsPage .CUDetails .CUShare,
+.contactUsPage .CUDetails > .font40 {
+  margin-bottom: 20px;
+}
+
+.contactUsPage .CUDetails .cuActions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 45%;
+}
+
+.contactUsPage .CUDetails .cuActions a {
+  width: 50%;
+}
+
+.contactUsPage .CUDetails > .p2Font {
+  color: #0B261F;
+  margin-bottom: 15px;
+}
+
+.contactUsPage .CUDetails > .font25 {
+  color: #0B261F;
+}
+
+.contactUsPage .CUform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.contactUsPage .CUform .formBg {
+  width: 50%;
+  padding: 30px 70px;
+  background: #F3F3F3;
+}
+
+.contactUsPage .CUform .location {
+  width: 50%;
+}
+
+.contactUsPage .CUform .location iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.innerData {
+  background: #F9F9F9;
+  border: 1px solid #E3E7EC;
+  margin-bottom: 40px;
+  padding: 33px 20px 30px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.innerData > .p2Font {
+  display: inline-block;
+}
+
+.innerData:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 8px 35px #51576126;
+          box-shadow: 0 8px 35px #51576126;
+}
+
+.innerData .font25 {
+  margin-bottom: 20px;
+  overflow: hidden;
+  line-height: 30px;
+  height: calc(30px * 2);
+}
+
+.innerData .cuActions {
+  margin-bottom: 36px;
+}
+
+.innerData .readMore2 {
+  padding-top: 9px;
+  padding-bottom: 4px;
+}
+
+.innerDataBG .font40 {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
