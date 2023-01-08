@@ -11,9 +11,109 @@ $bgF2F2F2:#F2F2F2;
 $p00192E: #00192E;
 $blackColor:#231F20;
 
+.greenBG1 {
+  background: #005F61;
+}
+.greenBG2 {
+  background: rgba(0, 95, 97, 0.8);
+}
+.greenBG3 {
+  background: rgba(0, 95, 97, 0.6);
+}
+.greenBG4 {
+  background: rgba(0, 95, 97, 0.4);
+}
+.greenBG5 {
+  background: rgba(0, 95, 97, 0.2);
+}
+.goldBG1 {
+  background: #C6AA76;
+}
+.goldBG2 {
+  background: rgba(198, 170, 118, 0.8);
+}
+.goldBG3 {
+  background: rgba(198, 170, 118, 0.6);
+}
+.goldBG4 {
+  background: rgba(198, 170, 118, 0.4);
+}
+.goldBG5 {
+  background: rgba(198, 170, 118, 0.2);
+}
+.h5Green,
+.h4Green,
+.h3Green,
+.h2Green,
+.h1Green{
+  color: #005F61;
+}
+.h5Gold,
+.h4Gold,
+.h3Gold,
+.h2Gold,
+.h1Gold{
+  color: #C6AA76;
+}
+.h5Gold,
+.h4Gold,
+.h3Gold,
+.h2Gold,
+.h1Gold,
+.h5Green,
+.h4Green,
+.h3Green,
+.h2Green,
+.h1Green{
+  font-family: "NAUSS-Bold";
+ 
+}
+.p1Font,
+.p2Font,
+.p3Font {
+  font-family: "GretaTextArabicARLT-Regular";
+  line-height: 40px;
+  margin: 0;
+}
+.p1Font {
+  color: #002D2E;
+}
+.p2Font {
+  color: #231F20;
+}
+.p3Font {
+  color: #555555;
+}
+.h1Gold,
+.h1Green {
+  font-size: 4rem;
+}
+.h2Gold,
+.h2Green {
+  font-size: 3rem;
+}
+.h3Gold,
+.h3Green {
+  font-size: 2.5rem;
+}
+.h4Gold,
+.h4Green {
+  font-size: 2rem;
+}
+.h5Gold,
+.h5Green {
+  font-size: 1.8rem;
+}
 
-
-
+.p1Font {
+  font-size: 2rem;
+}
+.p2Font {
+  font-size: 1.8rem;
+}
+.p3Font {
+  font-size: 1.6rem;
+}
 $theme-colors: (
   // "primary": $primary-color,
   // "warning": $orange-color,

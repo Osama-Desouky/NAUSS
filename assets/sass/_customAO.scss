@@ -31,6 +31,7 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
+
 .label,
 select,
 input::placeholder {
@@ -41,6 +42,7 @@ input::placeholder {
 .label {
   color: #231f20;
 }
+textarea,
 select,
 input {
   &:not([type="submit"]) {
@@ -49,10 +51,98 @@ input {
     border: 1px solid #005f6180;
     padding: 12px;
     border-radius: 6px;
+    background-color:#fff ;
+    color: #AFAFAF;
   }
   font-size: 1.6rem;
   font-family: "GretaTextArabicARLT-Regular";
   // color: #231F20;
+}
+textarea {
+  min-height: 115px;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  background-clip: content-box;
+  border: 2px solid #005F61;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: #C6AA76;
+  border-color: #C6AA76;
+}
+
+/* optional styles, I'm using this for centering radiobuttons */
+.flexRadio {
+  display: flex;
+  .label {
+    margin-right: 11px;
+  }
+}
+
+.checkboxBtn {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.checkboxBtn input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.checkboxBtn label {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'GretaTextArabicARLT-Regular';
+  color: #002D2E;
+  display: flex;
+  align-items: center;
+}
+
+.checkboxBtn label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #005F61;
+  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+}
+.checkboxBtn input:checked + label:before {
+  border: 2px solid #C6AA76;
+}
+.checkboxBtn input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  width: 6px;
+  height: 14px;
+  border: solid #C6AA76;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 select {
   appearance: none;
@@ -68,10 +158,21 @@ select {
     background-position: 10px 50%;
   }
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image:  url(../images/shared/calendarGold.svg);
+  width: 20px;
+  height: 22px;
+  margin-top: 2px;
+}
+input[type="date"] {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
 .required {
   &::after {
     content: "*";
-    color: red;
+    color: #C52359;
     display: inline-block;
     margin: 5px;
   }
@@ -271,7 +372,8 @@ a:hover {
 .mainBtnGreen {
   background-color: #005F61;
   border-color: #005F61;
-  min-width: 250px;
+  // min-width: 250px;
+  padding-left: 70px;
   color: #fff;
   &:hover {
     background-color: #0B7C7E;
@@ -1264,7 +1366,7 @@ table {
       font-size: 50px;
       color: #fff;
       line-height: 65px;
-      margin-bottom: 55px;
+      margin-bottom: 20px;
       font-family: "NAUSS-Bold";
       width: 50%;
       // height: 130px;
@@ -1494,6 +1596,7 @@ table {
     border-color: #005f61;
   }
 }
+.NewFullBanner2,
 .NewFullBanner {
   .posAbo {
     position: relative;
@@ -1626,6 +1729,7 @@ table {
     background: #fff;
     transition: 0.25s;
     display: inline-block;
+    border: 1px solid #e3e7ec;
     &:hover {
       box-shadow: 0 8px 35px rgba(81, 87, 97, 0.35);
       .imgB {
@@ -4039,4 +4143,248 @@ table {
     }
   }
  
+}
+.formGroup  {
+  margin-bottom: 22px;
+  .label  {
+    margin-bottom: 6px;
+  }
+}
+.radioBtn  {
+  // display: flex;
+  // flex-wrap: wrap;
+  // .label {
+  //   width: 100%;
+  // }
+  .flexRadio {
+    .flexRadio {
+      padding-left: 28px;
+    }
+  }
+}
+.inputGroup {
+  padding: 70px 10%;
+}
+
+.actionCaption {
+  @extend .flexSpaceBetween;
+  align-items: center;
+}
+.alert-danger {
+  background-color: #a71a231a;
+  border-color: #a71a231a;
+}
+.alert-warning {
+  background-color: #ce91291a;
+  border-color: #ce91291a;
+}
+.alert-success {
+  background-color: #005f611a;
+  border-color: #005f611a;
+}
+.alert-primary {
+  background-color: #1d69a71a;
+  border-color: #1d69a71a;
+}
+.alert {
+  display: flex;
+  border-radius: 12px;
+  border: 0;
+  >div {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+      margin-right: 13px;
+      color: #002D2E;
+      direction: ltr;
+    }
+  }
+  .btn-close {
+    right: unset;
+    left: 16px;
+    top: 12px;
+    font-size: 14px;
+  }
+}
+
+.accordionCustom {
+  .accordion-button::after {
+    background-image: url(../images/shared/plusavc.svg);
+    background-position: center center;
+    left: 24px;
+    margin-left: 0;
+    position: absolute;
+   
+   }
+   .accordion-button:not(.collapsed)::after {
+     background-image: url(../images/shared/plusaccordion.svg);
+   }
+   [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+     cursor: pointer;
+     background: #005F61;
+   }
+   .accordion-item {
+     background-color: #fff;
+     border: 0;
+     margin-bottom: 5px;
+   }
+   .accordion-button {
+     padding: 19px 24px;
+     border-radius: 6px !important;
+     border: unset !important;
+     color: #fff;
+     padding-left: 60px;
+     text-align: right;
+   }
+   .accordion-button:not(.collapsed) {
+     color: #fff;
+     background-color: #C6AA76;
+     box-shadow: unset;
+   }
+}
+
+.colorSerc {
+  div {
+    span {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      margin: 3px;
+      border-radius: 50%;
+    }
+  }
+}
+.systemDesign {
+  padding-top: 30px;
+  .fonttest {
+    color: #231F20;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+}
+.alumniAssociation {
+  .wrapperSlideHm {
+    height: 702px;
+  }
+  + .newsSection { 
+    padding: 45px 0 55px 0;
+  }
+}
+
+.art2Col  {
+  padding: 85px 0;
+  .boxArt2col {
+    display: flex;
+    border: 1px solid #E3E7EC;
+    background: #fff;
+    height: 332px;
+    margin-bottom: 30px;
+    transition: .25s;
+    &:hover {
+      box-shadow: 0 8px 35px #51576126;
+      .BA2CTxt {
+        .font30 {
+          text-decoration: underline;
+        }
+      }
+    }
+    .BA2CTxt {
+      width: 50%;
+      padding: 29px;
+      .p1Font {
+        margin-bottom: 30px;
+        
+      }
+      .font30 {
+
+        margin: 0;
+        line-height: 40px;
+        height: calc(40px * 5);
+        overflow: hidden;
+      }
+    }
+    .BA2CImg {
+      width: 50%;
+      img {
+        height: 100%;
+        // object-fit: cover;
+        // object-position: center center;
+      }
+    }
+  }
+}
+.art2Col  + .eventsSec {
+  padding-bottom: 45px;
+}
+.art2Col  + .eventsSec .heading * {
+  color: #C6AA76;
+}
+.NewFullBanner2 {
+  .swiperNewsFullBn  {
+    .newsSlideWarp,
+    .NSTxt {
+      height: 344px;
+      min-height: unset;
+    }
+    .NSTxt {
+      padding: 0 120px;
+      .h2Gold {
+        color: #C6AA76;
+      }
+      .font30 {
+        overflow: hidden;
+        @extend .multine-ellipsis2;
+        -webkit-line-clamp: 6;
+      }
+    }
+  }
+  .posAbo  {
+    top: -165px;
+    width: 95%;
+  }
+}
+
+
+.contactUs {
+  padding: 60px 40px;
+  .container {
+    box-shadow: 0 8px 35px #51576126;
+    padding: 40px 0 60px;
+  } 
+  .CUTxt {
+    width: 75%;
+    .font40 {
+      margin-bottom: 16px;
+    }
+    .p1Font {
+      margin-bottom: 30px;
+    }
+  } 
+}
+.FAQParent {
+  padding-bottom: 30px;
+}
+.tabsBtnsFAQ {
+	padding: 45px 0 50px;
+	justify-content: center;
+	.nav-item {
+		button {
+			min-width: 224px;
+			background: #fff;
+			height: 62px;
+			margin: 0 10px;
+			border-radius: 8px;
+			color: #005F61;
+			font-size: 18px;
+			font-family: "GretaTextArabicARLT-Regular";
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+		}
+		button.active {
+			background: #005F61;
+			color: #fff;
+			box-shadow: unset;
+		}
+	}
 }

@@ -1,3 +1,129 @@
+.greenBG1 {
+  background: #005F61;
+}
+
+.greenBG2 {
+  background: rgba(0, 95, 97, 0.8);
+}
+
+.greenBG3 {
+  background: rgba(0, 95, 97, 0.6);
+}
+
+.greenBG4 {
+  background: rgba(0, 95, 97, 0.4);
+}
+
+.greenBG5 {
+  background: rgba(0, 95, 97, 0.2);
+}
+
+.goldBG1 {
+  background: #C6AA76;
+}
+
+.goldBG2 {
+  background: rgba(198, 170, 118, 0.8);
+}
+
+.goldBG3 {
+  background: rgba(198, 170, 118, 0.6);
+}
+
+.goldBG4 {
+  background: rgba(198, 170, 118, 0.4);
+}
+
+.goldBG5 {
+  background: rgba(198, 170, 118, 0.2);
+}
+
+.h5Green,
+.h4Green,
+.h3Green,
+.h2Green,
+.h1Green {
+  color: #005F61;
+}
+
+.h5Gold,
+.h4Gold,
+.h3Gold,
+.h2Gold,
+.h1Gold {
+  color: #C6AA76;
+}
+
+.h5Gold,
+.h4Gold,
+.h3Gold,
+.h2Gold,
+.h1Gold,
+.h5Green,
+.h4Green,
+.h3Green,
+.h2Green,
+.h1Green {
+  font-family: "NAUSS-Bold";
+}
+
+.p1Font,
+.p2Font,
+.p3Font {
+  font-family: "GretaTextArabicARLT-Regular";
+  line-height: 40px;
+  margin: 0;
+}
+
+.p1Font {
+  color: #002D2E;
+}
+
+.p2Font {
+  color: #231F20;
+}
+
+.p3Font {
+  color: #555555;
+}
+
+.h1Gold,
+.h1Green {
+  font-size: 4rem;
+}
+
+.h2Gold,
+.h2Green {
+  font-size: 3rem;
+}
+
+.h3Gold,
+.h3Green {
+  font-size: 2.5rem;
+}
+
+.h4Gold,
+.h4Green {
+  font-size: 2rem;
+}
+
+.h5Gold,
+.h5Green {
+  font-size: 1.8rem;
+}
+
+.p1Font {
+  font-size: 2rem;
+}
+
+.p2Font {
+  font-size: 1.8rem;
+}
+
+.p3Font {
+  font-size: 1.6rem;
+}
+
 /*** RTL websites ***/
 @font-face {
   font-family: "NAUSS-Bold";
@@ -438,12 +564,14 @@ input::placeholder {
   color: #231f20;
 }
 
+textarea,
 select,
 input {
   font-size: 1.6rem;
   font-family: "GretaTextArabicARLT-Regular";
 }
 
+textarea:not([type="submit"]),
 select:not([type="submit"]),
 input:not([type="submit"]) {
   height: 48px;
@@ -451,6 +579,105 @@ input:not([type="submit"]) {
   border: 1px solid #005f6180;
   padding: 12px;
   border-radius: 6px;
+  background-color: #fff;
+  color: #AFAFAF;
+}
+
+textarea {
+  min-height: 115px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  background-clip: content-box;
+  border: 2px solid #005F61;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: #C6AA76;
+  border-color: #C6AA76;
+}
+
+/* optional styles, I'm using this for centering radiobuttons */
+.flexRadio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexRadio .label {
+  margin-right: 11px;
+}
+
+.checkboxBtn {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.checkboxBtn input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.checkboxBtn label {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'GretaTextArabicARLT-Regular';
+  color: #002D2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkboxBtn label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #005F61;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+}
+
+.checkboxBtn input:checked + label:before {
+  border: 2px solid #C6AA76;
+}
+
+.checkboxBtn input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  width: 6px;
+  height: 14px;
+  border: solid #C6AA76;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 select {
@@ -469,15 +696,34 @@ select {
   background-position: 10px 50%;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url(../images/shared/calendarGold.svg);
+  width: 20px;
+  height: 22px;
+  margin-top: 2px;
+}
+
+input[type="date"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
 .required::after {
   content: "*";
-  color: red;
+  color: #C52359;
   display: inline-block;
   margin: 5px;
 }
 
 .flexCenter, .plusMin, .customMenu .langMenu > a, .customMenu .langMenu .dropdown-menu li.spliter,
-.customMenu .langMenu .dropdown-menu li.spliter ~ li, .NewFullBanner .newsSlideWarp .NSTxt, .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .fromTo strong, .ourPartners .partBox .logoPart, .bannerImg2, .universityPresidents .UPbox {
+.customMenu .langMenu .dropdown-menu li.spliter ~ li, .NewFullBanner2 .newsSlideWarp .NSTxt,
+.NewFullBanner .newsSlideWarp .NSTxt, .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .fromTo strong, .ourPartners .partBox .logoPart, .bannerImg2, .universityPresidents .UPbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +735,7 @@ select {
           justify-content: center;
 }
 
-.flexSpaceBetween, .subsBox, .NFooter .socialFooter, .advantSec .forTwoFlex, .bannerTraining .swiperTrainingThumb .swiper-wrapper, .memberDetails .contextMem .aimUl {
+.flexSpaceBetween, .subsBox, .NFooter .socialFooter, .advantSec .forTwoFlex, .bannerTraining .swiperTrainingThumb .swiper-wrapper, .memberDetails .contextMem .aimUl, .actionCaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,15 +762,17 @@ select {
 .btnMainGold::after,
 .btnMain::after,
 .readMore2::after,
-.readMore::after, .videoPl strong::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .PLbox .hiddenTxt::after, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .NewFullBanner .newsSlideWarp::before, .bgGrayWithPattern::after, .eventsSec::after, .NFooter .importantlinks li a:hover::after, .bgBreadcrumb .breadcrumbCum a::after, .bannerImg2::after, .progTxtBg::after, .progTxtBg .progTxt .videoProg .videoPl, .progTxtBg .progTxt .videoProg .videoPl::after, .progTxtBg .progTxt .videoProg .videoPl strong, .markGoldP2 li::after,
+.readMore::after, .videoPl strong::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .PLbox .hiddenTxt::after, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .NewFullBanner2 .newsSlideWarp::before,
+.NewFullBanner .newsSlideWarp::before, .bgGrayWithPattern::after, .eventsSec::after, .NFooter .importantlinks li a:hover::after, .bgBreadcrumb .breadcrumbCum a::after, .bannerImg2::after, .progTxtBg::after, .progTxtBg .progTxt .videoProg .videoPl, .progTxtBg .progTxt .videoProg .videoPl::after, .progTxtBg .progTxt .videoProg .videoPl strong, .markGoldP2 li::after,
 .aimUl li::after, .bannerTraining .swiperControlTraining .swiper-pagination-bullet.swiper-pagination-bullet-active::after, .PublicationInvitations .PIimg::after, .aboutPageLine .container::after, .aboutPageLine .titleAPL::after, .aboutPageLine .titleAPL::before, .contentSlider .sliderWithFansyBox .fancyboxImg::after, .shareBG .contentShare::after, .universityPresidents .UPbox::after, .universityPresidents .UPbox .fromTo .dividing::after {
   position: absolute;
   content: "";
 }
 
 .multine-ellipsis2, .PLbox .hiddenTxt p.font16, .swiper2Style .wapperSlideTow .font18, .swiper2Style .wapperSlideTow .NFooter .contactUs a, .NFooter .contactUs .swiper2Style .wapperSlideTow a,
-.swiper2Style .wapperSlideTow .NFooter .importantlinks a, .NFooter .importantlinks .swiper2Style .wapperSlideTow a, .compSection .capmWapper .font40, .slider5Item .slid5Warp .font24, .NewFullBanner .newsSlideWarp .NSTxt .font20, .NewFullBanner .newsSlideWarp .NSTxt .sildeTabs .nav-pills .nav-link, .sildeTabs .nav-pills .NewFullBanner .newsSlideWarp .NSTxt .nav-link, .newsSection .newsBox .txtN .font24, .eventsSec .eventWapper .font20Bold, .studiesSec .studyBox2 .txtSt .font20Bold, .ourNum .galleryWrap .font30, .ourNum .galleryWrap .loadMore, .ourNum .thumbWrap h2, .ourNum .thumbWrap p, .impAchievement .impAchiWrap .ImpAchiBox .font40, .impAchievement .impAchiWrap .ImpAchiBox .p22B, .ourPartners .partBox .p16, .progTxtBg .progTxt .p20, .progTxtBg .progTxt .detailsOfEvent .EVCard ul li, .detailsOfEvent .EVCard ul .progTxtBg .progTxt li, .resultEducation .resEdWrapper div .p18, .resultEducation .resEdWrapper div .listItem2 ul li, .listItem2 ul .resultEducation .resEdWrapper div li,
-.resultEducation .resEdWrapper div .EVCard ul li, .EVCard ul .resultEducation .resEdWrapper div li, .trainSec .warp4Text .font25 {
+.swiper2Style .wapperSlideTow .NFooter .importantlinks a, .NFooter .importantlinks .swiper2Style .wapperSlideTow a, .compSection .capmWapper .font40, .slider5Item .slid5Warp .font24, .NewFullBanner2 .newsSlideWarp .NSTxt .font20, .NewFullBanner2 .newsSlideWarp .NSTxt .sildeTabs .nav-pills .nav-link, .sildeTabs .nav-pills .NewFullBanner2 .newsSlideWarp .NSTxt .nav-link,
+.NewFullBanner .newsSlideWarp .NSTxt .font20, .NewFullBanner .newsSlideWarp .NSTxt .sildeTabs .nav-pills .nav-link, .sildeTabs .nav-pills .NewFullBanner .newsSlideWarp .NSTxt .nav-link, .newsSection .newsBox .txtN .font24, .eventsSec .eventWapper .font20Bold, .studiesSec .studyBox2 .txtSt .font20Bold, .ourNum .galleryWrap .font30, .ourNum .galleryWrap .loadMore, .ourNum .thumbWrap h2, .ourNum .thumbWrap p, .impAchievement .impAchiWrap .ImpAchiBox .font40, .impAchievement .impAchiWrap .ImpAchiBox .p22B, .ourPartners .partBox .p16, .progTxtBg .progTxt .p20, .progTxtBg .progTxt .detailsOfEvent .EVCard ul li, .detailsOfEvent .EVCard ul .progTxtBg .progTxt li, .resultEducation .resEdWrapper div .p18, .resultEducation .resEdWrapper div .listItem2 ul li, .listItem2 ul .resultEducation .resEdWrapper div li,
+.resultEducation .resEdWrapper div .EVCard ul li, .EVCard ul .resultEducation .resEdWrapper div li, .trainSec .warp4Text .font25, .NewFullBanner2 .swiperNewsFullBn .NSTxt .font30, .NewFullBanner2 .swiperNewsFullBn .NSTxt .loadMore {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -756,7 +1004,7 @@ a:hover {
 .mainBtnGreen {
   background-color: #005F61;
   border-color: #005F61;
-  min-width: 250px;
+  padding-left: 70px;
   color: #fff;
 }
 
@@ -1860,7 +2108,8 @@ table tbody tr:nth-child(odd) {
 }
 
 .customMenu .searchMenu .megamenu .flexCenter, .customMenu .searchMenu .megamenu .plusMin, .customMenu .searchMenu .megamenu .langMenu > a, .customMenu .searchMenu .megamenu .langMenu .dropdown-menu li.spliter, .customMenu .langMenu .dropdown-menu .searchMenu .megamenu li.spliter,
-.customMenu .searchMenu .megamenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .searchMenu .megamenu li.spliter ~ li, .customMenu .searchMenu .megamenu .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .megamenu .NSTxt, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .customMenu .searchMenu .megamenu .fromTo, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .customMenu .searchMenu .megamenu strong, .customMenu .searchMenu .megamenu .ourPartners .partBox .logoPart, .ourPartners .partBox .customMenu .searchMenu .megamenu .logoPart, .customMenu .searchMenu .megamenu .bannerImg2, .customMenu .searchMenu .megamenu .universityPresidents .UPbox, .universityPresidents .customMenu .searchMenu .megamenu .UPbox {
+.customMenu .searchMenu .megamenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .searchMenu .megamenu li.spliter ~ li, .customMenu .searchMenu .megamenu .NewFullBanner2 .newsSlideWarp .NSTxt, .NewFullBanner2 .newsSlideWarp .customMenu .searchMenu .megamenu .NSTxt,
+.customMenu .searchMenu .megamenu .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .megamenu .NSTxt, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .customMenu .searchMenu .megamenu .fromTo, .customMenu .searchMenu .megamenu .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .customMenu .searchMenu .megamenu strong, .customMenu .searchMenu .megamenu .ourPartners .partBox .logoPart, .ourPartners .partBox .customMenu .searchMenu .megamenu .logoPart, .customMenu .searchMenu .megamenu .bannerImg2, .customMenu .searchMenu .megamenu .universityPresidents .UPbox, .universityPresidents .customMenu .searchMenu .megamenu .UPbox {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -1950,7 +2199,7 @@ table tbody tr:nth-child(odd) {
   font-size: 50px;
   color: #fff;
   line-height: 65px;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   font-family: "NAUSS-Bold";
   width: 50%;
 }
@@ -2210,18 +2459,21 @@ table tbody tr:nth-child(odd) {
   border-color: #005f61;
 }
 
+.NewFullBanner2 .posAbo,
 .NewFullBanner .posAbo {
   position: relative;
   content: "";
   top: -280px;
 }
 
+.NewFullBanner2 .newsSlideWarp,
 .NewFullBanner .newsSlideWarp {
   position: relative;
   min-height: 561px;
   background: #005f61;
 }
 
+.NewFullBanner2 .newsSlideWarp::before,
 .NewFullBanner .newsSlideWarp::before {
   width: 66px;
   height: 100%;
@@ -2230,6 +2482,7 @@ table tbody tr:nth-child(odd) {
   top: 0;
 }
 
+.NewFullBanner2 .newsSlideWarp > img,
 .NewFullBanner .newsSlideWarp > img {
   position: absolute;
   left: 0;
@@ -2238,11 +2491,13 @@ table tbody tr:nth-child(odd) {
   z-index: 2;
 }
 
+.NewFullBanner2 .newsSlideWarp .NSTxt *,
 .NewFullBanner .newsSlideWarp .NSTxt * {
   color: #fff;
   text-align: right;
 }
 
+.NewFullBanner2 .newsSlideWarp .NSTxt,
 .NewFullBanner .newsSlideWarp .NSTxt {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2257,15 +2512,21 @@ table tbody tr:nth-child(odd) {
   padding: 0 80px;
 }
 
-.NewFullBanner .newsSlideWarp .NSTxt .font30, .NewFullBanner .newsSlideWarp .NSTxt .loadMore {
+.NewFullBanner2 .newsSlideWarp .NSTxt .font30, .NewFullBanner2 .newsSlideWarp .NSTxt .loadMore,
+.NewFullBanner .newsSlideWarp .NSTxt .font30,
+.NewFullBanner .newsSlideWarp .NSTxt .loadMore {
   margin-bottom: 25px;
 }
 
+.NewFullBanner2 .newsSlideWarp .NSTxt .readMore,
 .NewFullBanner .newsSlideWarp .NSTxt .readMore {
   min-width: 120px;
 }
 
-.NewFullBanner .newsSlideWarp .NSTxt .font20, .NewFullBanner .newsSlideWarp .NSTxt .sildeTabs .nav-pills .nav-link, .sildeTabs .nav-pills .NewFullBanner .newsSlideWarp .NSTxt .nav-link {
+.NewFullBanner2 .newsSlideWarp .NSTxt .font20, .NewFullBanner2 .newsSlideWarp .NSTxt .sildeTabs .nav-pills .nav-link, .sildeTabs .nav-pills .NewFullBanner2 .newsSlideWarp .NSTxt .nav-link,
+.NewFullBanner .newsSlideWarp .NSTxt .font20,
+.NewFullBanner .newsSlideWarp .NSTxt .sildeTabs .nav-pills .nav-link,
+.sildeTabs .nav-pills .NewFullBanner .newsSlideWarp .NSTxt .nav-link {
   margin-bottom: 33px;
   -webkit-line-clamp: 4;
 }
@@ -2322,6 +2583,7 @@ table tbody tr:nth-child(odd) {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   display: inline-block;
+  border: 1px solid #e3e7ec;
 }
 
 .newsSection .newsBox:hover {
@@ -3764,7 +4026,7 @@ table tbody tr:nth-child(odd) {
   margin-bottom: 25px;
 }
 
-.servCenterBG .flexSpaceBetween, .servCenterBG .subsBox, .servCenterBG .NFooter .socialFooter, .NFooter .servCenterBG .socialFooter, .servCenterBG .advantSec .forTwoFlex, .advantSec .servCenterBG .forTwoFlex, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper, .servCenterBG .memberDetails .contextMem .aimUl, .memberDetails .contextMem .servCenterBG .aimUl {
+.servCenterBG .flexSpaceBetween, .servCenterBG .subsBox, .servCenterBG .NFooter .socialFooter, .NFooter .servCenterBG .socialFooter, .servCenterBG .advantSec .forTwoFlex, .advantSec .servCenterBG .forTwoFlex, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper, .servCenterBG .memberDetails .contextMem .aimUl, .memberDetails .contextMem .servCenterBG .aimUl, .servCenterBG .actionCaption {
   padding-right: 30px;
 }
 
@@ -4448,13 +4710,14 @@ table tbody tr:nth-child(odd) {
 }
 
 .contentSlider .flexCenter, .contentSlider .plusMin, .contentSlider .customMenu .langMenu > a, .customMenu .contentSlider .langMenu > a, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter,
-.contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li, .contentSlider .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt, .contentSlider .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .contentSlider .fromTo, .contentSlider .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .contentSlider strong, .contentSlider .ourPartners .partBox .logoPart, .ourPartners .partBox .contentSlider .logoPart, .contentSlider .bannerImg2, .contentSlider .universityPresidents .UPbox, .universityPresidents .contentSlider .UPbox {
+.contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li, .contentSlider .NewFullBanner2 .newsSlideWarp .NSTxt, .NewFullBanner2 .newsSlideWarp .contentSlider .NSTxt,
+.contentSlider .NewFullBanner .newsSlideWarp .NSTxt, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt, .contentSlider .eventsSec .eventWapper .fromTo, .eventsSec .eventWapper .contentSlider .fromTo, .contentSlider .eventsSec .eventWapper .fromTo strong, .eventsSec .eventWapper .fromTo .contentSlider strong, .contentSlider .ourPartners .partBox .logoPart, .ourPartners .partBox .contentSlider .logoPart, .contentSlider .bannerImg2, .contentSlider .universityPresidents .UPbox, .universityPresidents .contentSlider .UPbox {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
 }
 
-.contentSlider .flexCenter .date, .contentSlider .plusMin .date, .contentSlider .customMenu .langMenu > a .date, .customMenu .contentSlider .langMenu > a .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li .date, .contentSlider .NewFullBanner .newsSlideWarp .NSTxt .date, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt .date, .contentSlider .eventsSec .eventWapper .fromTo .date, .eventsSec .eventWapper .contentSlider .fromTo .date, .eventsSec .eventWapper .fromTo .contentSlider strong .date, .contentSlider .ourPartners .partBox .logoPart .date, .ourPartners .partBox .contentSlider .logoPart .date, .contentSlider .bannerImg2 .date, .contentSlider .universityPresidents .UPbox .date, .universityPresidents .contentSlider .UPbox .date {
+.contentSlider .flexCenter .date, .contentSlider .plusMin .date, .contentSlider .customMenu .langMenu > a .date, .customMenu .contentSlider .langMenu > a .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter .date, .contentSlider .customMenu .langMenu .dropdown-menu li.spliter ~ li .date, .customMenu .langMenu .dropdown-menu .contentSlider li.spliter ~ li .date, .contentSlider .NewFullBanner2 .newsSlideWarp .NSTxt .date, .NewFullBanner2 .newsSlideWarp .contentSlider .NSTxt .date, .contentSlider .NewFullBanner .newsSlideWarp .NSTxt .date, .NewFullBanner .newsSlideWarp .contentSlider .NSTxt .date, .contentSlider .eventsSec .eventWapper .fromTo .date, .eventsSec .eventWapper .contentSlider .fromTo .date, .eventsSec .eventWapper .fromTo .contentSlider strong .date, .contentSlider .ourPartners .partBox .logoPart .date, .ourPartners .partBox .contentSlider .logoPart .date, .contentSlider .bannerImg2 .date, .contentSlider .universityPresidents .UPbox .date, .universityPresidents .contentSlider .UPbox .date {
   margin-left: 10px;
 }
 
@@ -4994,12 +5257,13 @@ table tbody tr:nth-child(odd) {
   margin-bottom: 30px;
 }
 
-.cardUsa .headinnWithDate .flexCenter .p18, .cardUsa .headinnWithDate .plusMin .p18, .cardUsa .headinnWithDate .customMenu .langMenu > a .p18, .customMenu .cardUsa .headinnWithDate .langMenu > a .p18, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter .p18, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter .p18, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li .p18, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li .p18, .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt .p18, .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .p18, .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo .p18, .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo .p18, .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong .p18, .cardUsa .headinnWithDate .ourPartners .partBox .logoPart .p18, .ourPartners .partBox .cardUsa .headinnWithDate .logoPart .p18, .cardUsa .headinnWithDate .bannerImg2 .p18, .cardUsa .headinnWithDate .universityPresidents .UPbox .p18, .universityPresidents .cardUsa .headinnWithDate .UPbox .p18, .cardUsa .headinnWithDate .flexCenter .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .flexCenter li, .cardUsa .headinnWithDate .plusMin .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .plusMin li, .cardUsa .headinnWithDate .customMenu .langMenu > a .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .customMenu .langMenu > a li, .customMenu .cardUsa .headinnWithDate .langMenu > a .listItem2 ul li, .listItem2 ul .customMenu .cardUsa .headinnWithDate .langMenu > a li, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter li, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter .listItem2 ul li, .listItem2 ul .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter li, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li li, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li .listItem2 ul li, .listItem2 ul .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li li, .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt li, .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .listItem2 ul li, .listItem2 ul .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt li, .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo li, .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo .listItem2 ul li, .listItem2 ul .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo li, .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong .listItem2 ul li, .listItem2 ul .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong li, .cardUsa .headinnWithDate .ourPartners .partBox .logoPart .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .ourPartners .partBox .logoPart li, .ourPartners .partBox .cardUsa .headinnWithDate .logoPart .listItem2 ul li, .listItem2 ul .ourPartners .partBox .cardUsa .headinnWithDate .logoPart li, .cardUsa .headinnWithDate .bannerImg2 .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .bannerImg2 li, .cardUsa .headinnWithDate .universityPresidents .UPbox .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .universityPresidents .UPbox li, .universityPresidents .cardUsa .headinnWithDate .UPbox .listItem2 ul li, .listItem2 ul .universityPresidents .cardUsa .headinnWithDate .UPbox li,
+.cardUsa .headinnWithDate .flexCenter .p18, .cardUsa .headinnWithDate .plusMin .p18, .cardUsa .headinnWithDate .customMenu .langMenu > a .p18, .customMenu .cardUsa .headinnWithDate .langMenu > a .p18, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter .p18, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter .p18, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li .p18, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li .p18, .cardUsa .headinnWithDate .NewFullBanner2 .newsSlideWarp .NSTxt .p18, .NewFullBanner2 .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .p18, .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt .p18, .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .p18, .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo .p18, .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo .p18, .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong .p18, .cardUsa .headinnWithDate .ourPartners .partBox .logoPart .p18, .ourPartners .partBox .cardUsa .headinnWithDate .logoPart .p18, .cardUsa .headinnWithDate .bannerImg2 .p18, .cardUsa .headinnWithDate .universityPresidents .UPbox .p18, .universityPresidents .cardUsa .headinnWithDate .UPbox .p18, .cardUsa .headinnWithDate .flexCenter .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .flexCenter li, .cardUsa .headinnWithDate .plusMin .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .plusMin li, .cardUsa .headinnWithDate .customMenu .langMenu > a .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .customMenu .langMenu > a li, .customMenu .cardUsa .headinnWithDate .langMenu > a .listItem2 ul li, .listItem2 ul .customMenu .cardUsa .headinnWithDate .langMenu > a li, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter li, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter .listItem2 ul li, .listItem2 ul .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter li, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li li, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li .listItem2 ul li, .listItem2 ul .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li li, .cardUsa .headinnWithDate .NewFullBanner2 .newsSlideWarp .NSTxt .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .NewFullBanner2 .newsSlideWarp .NSTxt li, .NewFullBanner2 .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .listItem2 ul li, .listItem2 ul .NewFullBanner2 .newsSlideWarp .cardUsa .headinnWithDate .NSTxt li, .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt li, .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .listItem2 ul li, .listItem2 ul .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt li, .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo li, .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo .listItem2 ul li, .listItem2 ul .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo li, .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong .listItem2 ul li, .listItem2 ul .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong li, .cardUsa .headinnWithDate .ourPartners .partBox .logoPart .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .ourPartners .partBox .logoPart li, .ourPartners .partBox .cardUsa .headinnWithDate .logoPart .listItem2 ul li, .listItem2 ul .ourPartners .partBox .cardUsa .headinnWithDate .logoPart li, .cardUsa .headinnWithDate .bannerImg2 .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .bannerImg2 li, .cardUsa .headinnWithDate .universityPresidents .UPbox .listItem2 ul li, .listItem2 ul .cardUsa .headinnWithDate .universityPresidents .UPbox li, .universityPresidents .cardUsa .headinnWithDate .UPbox .listItem2 ul li, .listItem2 ul .universityPresidents .cardUsa .headinnWithDate .UPbox li,
 .cardUsa .headinnWithDate .flexCenter .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .flexCenter li,
 .cardUsa .headinnWithDate .plusMin .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .plusMin li,
 .cardUsa .headinnWithDate .customMenu .langMenu > a .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .customMenu .langMenu > a li, .customMenu .cardUsa .headinnWithDate .langMenu > a .EVCard ul li, .EVCard ul .customMenu .cardUsa .headinnWithDate .langMenu > a li,
 .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter li, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter .EVCard ul li, .EVCard ul .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter li,
 .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li li, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li .EVCard ul li, .EVCard ul .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li li,
+.cardUsa .headinnWithDate .NewFullBanner2 .newsSlideWarp .NSTxt .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .NewFullBanner2 .newsSlideWarp .NSTxt li, .NewFullBanner2 .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .EVCard ul li, .EVCard ul .NewFullBanner2 .newsSlideWarp .cardUsa .headinnWithDate .NSTxt li,
 .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt li, .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .EVCard ul li, .EVCard ul .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt li,
 .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo li, .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo .EVCard ul li, .EVCard ul .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo li, .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong .EVCard ul li, .EVCard ul .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong li,
 .cardUsa .headinnWithDate .ourPartners .partBox .logoPart .EVCard ul li, .EVCard ul .cardUsa .headinnWithDate .ourPartners .partBox .logoPart li, .ourPartners .partBox .cardUsa .headinnWithDate .logoPart .EVCard ul li, .EVCard ul .ourPartners .partBox .cardUsa .headinnWithDate .logoPart li,
@@ -5010,7 +5274,7 @@ table tbody tr:nth-child(odd) {
           transform: translatey(7px);
 }
 
-.cardUsa .headinnWithDate .flexCenter .date span, .cardUsa .headinnWithDate .plusMin .date span, .cardUsa .headinnWithDate .customMenu .langMenu > a .date span, .customMenu .cardUsa .headinnWithDate .langMenu > a .date span, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter .date span, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter .date span, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li .date span, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li .date span, .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt .date span, .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .date span, .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo .date span, .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo .date span, .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong .date span, .cardUsa .headinnWithDate .ourPartners .partBox .logoPart .date span, .ourPartners .partBox .cardUsa .headinnWithDate .logoPart .date span, .cardUsa .headinnWithDate .bannerImg2 .date span, .cardUsa .headinnWithDate .universityPresidents .UPbox .date span, .universityPresidents .cardUsa .headinnWithDate .UPbox .date span {
+.cardUsa .headinnWithDate .flexCenter .date span, .cardUsa .headinnWithDate .plusMin .date span, .cardUsa .headinnWithDate .customMenu .langMenu > a .date span, .customMenu .cardUsa .headinnWithDate .langMenu > a .date span, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter .date span, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter .date span, .cardUsa .headinnWithDate .customMenu .langMenu .dropdown-menu li.spliter ~ li .date span, .customMenu .langMenu .dropdown-menu .cardUsa .headinnWithDate li.spliter ~ li .date span, .cardUsa .headinnWithDate .NewFullBanner2 .newsSlideWarp .NSTxt .date span, .NewFullBanner2 .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .date span, .cardUsa .headinnWithDate .NewFullBanner .newsSlideWarp .NSTxt .date span, .NewFullBanner .newsSlideWarp .cardUsa .headinnWithDate .NSTxt .date span, .cardUsa .headinnWithDate .eventsSec .eventWapper .fromTo .date span, .eventsSec .eventWapper .cardUsa .headinnWithDate .fromTo .date span, .eventsSec .eventWapper .fromTo .cardUsa .headinnWithDate strong .date span, .cardUsa .headinnWithDate .ourPartners .partBox .logoPart .date span, .ourPartners .partBox .cardUsa .headinnWithDate .logoPart .date span, .cardUsa .headinnWithDate .bannerImg2 .date span, .cardUsa .headinnWithDate .universityPresidents .UPbox .date span, .universityPresidents .cardUsa .headinnWithDate .UPbox .date span {
   font-size: 2rem;
 }
 
@@ -5172,6 +5436,279 @@ table tbody tr:nth-child(odd) {
 
 .decimalLi li::marker {
   font-size: 1.8rem;
+}
+
+.formGroup {
+  margin-bottom: 22px;
+}
+
+.formGroup .label {
+  margin-bottom: 6px;
+}
+
+.radioBtn .flexRadio .flexRadio {
+  padding-left: 28px;
+}
+
+.inputGroup {
+  padding: 70px 10%;
+}
+
+.actionCaption {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alert-danger {
+  background-color: #a71a231a;
+  border-color: #a71a231a;
+}
+
+.alert-warning {
+  background-color: #ce91291a;
+  border-color: #ce91291a;
+}
+
+.alert-success {
+  background-color: #005f611a;
+  border-color: #005f611a;
+}
+
+.alert-primary {
+  background-color: #1d69a71a;
+  border-color: #1d69a71a;
+}
+
+.alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 12px;
+  border: 0;
+}
+
+.alert > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alert > div p {
+  margin: 0;
+  margin-right: 13px;
+  color: #002D2E;
+  direction: ltr;
+}
+
+.alert .btn-close {
+  right: unset;
+  left: 16px;
+  top: 12px;
+  font-size: 14px;
+}
+
+.accordionCustom .accordion-button::after {
+  background-image: url(../images/shared/plusavc.svg);
+  background-position: center center;
+  left: 24px;
+  margin-left: 0;
+  position: absolute;
+}
+
+.accordionCustom .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/shared/plusaccordion.svg);
+}
+
+.accordionCustom [type=button]:not(:disabled), .accordionCustom [type=reset]:not(:disabled), .accordionCustom [type=submit]:not(:disabled), .accordionCustom button:not(:disabled) {
+  cursor: pointer;
+  background: #005F61;
+}
+
+.accordionCustom .accordion-item {
+  background-color: #fff;
+  border: 0;
+  margin-bottom: 5px;
+}
+
+.accordionCustom .accordion-button {
+  padding: 19px 24px;
+  border-radius: 6px !important;
+  border: unset !important;
+  color: #fff;
+  padding-left: 60px;
+  text-align: right;
+}
+
+.accordionCustom .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #C6AA76;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.colorSerc div span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 3px;
+  border-radius: 50%;
+}
+
+.systemDesign {
+  padding-top: 30px;
+}
+
+.systemDesign .fonttest {
+  color: #231F20;
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.alumniAssociation .wrapperSlideHm {
+  height: 702px;
+}
+
+.alumniAssociation + .newsSection {
+  padding: 45px 0 55px 0;
+}
+
+.art2Col {
+  padding: 85px 0;
+}
+
+.art2Col .boxArt2col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #E3E7EC;
+  background: #fff;
+  height: 332px;
+  margin-bottom: 30px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.art2Col .boxArt2col:hover {
+  -webkit-box-shadow: 0 8px 35px #51576126;
+          box-shadow: 0 8px 35px #51576126;
+}
+
+.art2Col .boxArt2col:hover .BA2CTxt .font30, .art2Col .boxArt2col:hover .BA2CTxt .loadMore {
+  text-decoration: underline;
+}
+
+.art2Col .boxArt2col .BA2CTxt {
+  width: 50%;
+  padding: 29px;
+}
+
+.art2Col .boxArt2col .BA2CTxt .p1Font {
+  margin-bottom: 30px;
+}
+
+.art2Col .boxArt2col .BA2CTxt .font30, .art2Col .boxArt2col .BA2CTxt .loadMore {
+  margin: 0;
+  line-height: 40px;
+  height: calc(40px * 5);
+  overflow: hidden;
+}
+
+.art2Col .boxArt2col .BA2CImg {
+  width: 50%;
+}
+
+.art2Col .boxArt2col .BA2CImg img {
+  height: 100%;
+}
+
+.art2Col + .eventsSec {
+  padding-bottom: 45px;
+}
+
+.art2Col + .eventsSec .heading * {
+  color: #C6AA76;
+}
+
+.NewFullBanner2 .swiperNewsFullBn .newsSlideWarp,
+.NewFullBanner2 .swiperNewsFullBn .NSTxt {
+  height: 344px;
+  min-height: unset;
+}
+
+.NewFullBanner2 .swiperNewsFullBn .NSTxt {
+  padding: 0 120px;
+}
+
+.NewFullBanner2 .swiperNewsFullBn .NSTxt .h2Gold {
+  color: #C6AA76;
+}
+
+.NewFullBanner2 .swiperNewsFullBn .NSTxt .font30, .NewFullBanner2 .swiperNewsFullBn .NSTxt .loadMore {
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+}
+
+.NewFullBanner2 .posAbo {
+  top: -165px;
+  width: 95%;
+}
+
+.contactUs {
+  padding: 60px 40px;
+}
+
+.contactUs .container {
+  -webkit-box-shadow: 0 8px 35px #51576126;
+          box-shadow: 0 8px 35px #51576126;
+  padding: 40px 0 60px;
+}
+
+.contactUs .CUTxt {
+  width: 75%;
+}
+
+.contactUs .CUTxt .font40 {
+  margin-bottom: 16px;
+}
+
+.contactUs .CUTxt .p1Font {
+  margin-bottom: 30px;
+}
+
+.FAQParent {
+  padding-bottom: 30px;
+}
+
+.tabsBtnsFAQ {
+  padding: 45px 0 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabsBtnsFAQ .nav-item button {
+  min-width: 224px;
+  background: #fff;
+  height: 62px;
+  margin: 0 10px;
+  border-radius: 8px;
+  color: #005F61;
+  font-size: 18px;
+  font-family: "GretaTextArabicARLT-Regular";
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.tabsBtnsFAQ .nav-item button.active {
+  background: #005F61;
+  color: #fff;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
 }
 
 @media (min-width: 1200px) {
@@ -5453,7 +5990,7 @@ table tbody tr:nth-child(odd) {
   .customMenu .searchMenu .megamenu input::placeholder {
     font-size: 16px;
   }
-  .customMenu .searchMenu .flexCenter a, .customMenu .searchMenu .plusMin a, .customMenu .searchMenu .langMenu > a a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter ~ li a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter ~ li a, .customMenu .searchMenu .NewFullBanner .newsSlideWarp .NSTxt a, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .NSTxt a, .customMenu .searchMenu .eventsSec .eventWapper .fromTo a, .eventsSec .eventWapper .customMenu .searchMenu .fromTo a, .eventsSec .eventWapper .fromTo .customMenu .searchMenu strong a, .customMenu .searchMenu .ourPartners .partBox .logoPart a, .ourPartners .partBox .customMenu .searchMenu .logoPart a, .customMenu .searchMenu .bannerImg2 a, .customMenu .searchMenu .universityPresidents .UPbox a, .universityPresidents .customMenu .searchMenu .UPbox a {
+  .customMenu .searchMenu .flexCenter a, .customMenu .searchMenu .plusMin a, .customMenu .searchMenu .langMenu > a a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter a, .customMenu .searchMenu .langMenu .dropdown-menu li.spliter ~ li a, .customMenu .langMenu .dropdown-menu .searchMenu li.spliter ~ li a, .customMenu .searchMenu .NewFullBanner2 .newsSlideWarp .NSTxt a, .NewFullBanner2 .newsSlideWarp .customMenu .searchMenu .NSTxt a, .customMenu .searchMenu .NewFullBanner .newsSlideWarp .NSTxt a, .NewFullBanner .newsSlideWarp .customMenu .searchMenu .NSTxt a, .customMenu .searchMenu .eventsSec .eventWapper .fromTo a, .eventsSec .eventWapper .customMenu .searchMenu .fromTo a, .eventsSec .eventWapper .fromTo .customMenu .searchMenu strong a, .customMenu .searchMenu .ourPartners .partBox .logoPart a, .ourPartners .partBox .customMenu .searchMenu .logoPart a, .customMenu .searchMenu .bannerImg2 a, .customMenu .searchMenu .universityPresidents .UPbox a, .universityPresidents .customMenu .searchMenu .UPbox a {
     margin-right: 21px;
   }
   .customMenu .navbar-light .navbar-toggler-icon {
@@ -5644,12 +6181,12 @@ table tbody tr:nth-child(odd) {
   .PLbox .hiddenTxt .btnMainGold {
     font-size: 1rem;
   }
-  .servCenterBG .flexSpaceBetween, .servCenterBG .subsBox, .servCenterBG .NFooter .socialFooter, .NFooter .servCenterBG .socialFooter, .servCenterBG .advantSec .forTwoFlex, .advantSec .servCenterBG .forTwoFlex, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper, .servCenterBG .memberDetails .contextMem .aimUl, .memberDetails .contextMem .servCenterBG .aimUl {
+  .servCenterBG .flexSpaceBetween, .servCenterBG .subsBox, .servCenterBG .NFooter .socialFooter, .NFooter .servCenterBG .socialFooter, .servCenterBG .advantSec .forTwoFlex, .advantSec .servCenterBG .forTwoFlex, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper, .servCenterBG .memberDetails .contextMem .aimUl, .memberDetails .contextMem .servCenterBG .aimUl, .servCenterBG .actionCaption {
     display: block;
     margin-bottom: 20px;
     padding-right: 0px;
   }
-  .servCenterBG .flexSpaceBetween .whiteBoxOffer, .servCenterBG .subsBox .whiteBoxOffer, .servCenterBG .NFooter .socialFooter .whiteBoxOffer, .NFooter .servCenterBG .socialFooter .whiteBoxOffer, .servCenterBG .advantSec .forTwoFlex .whiteBoxOffer, .advantSec .servCenterBG .forTwoFlex .whiteBoxOffer, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper .whiteBoxOffer, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper .whiteBoxOffer, .servCenterBG .memberDetails .contextMem .aimUl .whiteBoxOffer, .memberDetails .contextMem .servCenterBG .aimUl .whiteBoxOffer {
+  .servCenterBG .flexSpaceBetween .whiteBoxOffer, .servCenterBG .subsBox .whiteBoxOffer, .servCenterBG .NFooter .socialFooter .whiteBoxOffer, .NFooter .servCenterBG .socialFooter .whiteBoxOffer, .servCenterBG .advantSec .forTwoFlex .whiteBoxOffer, .advantSec .servCenterBG .forTwoFlex .whiteBoxOffer, .servCenterBG .bannerTraining .swiperTrainingThumb .swiper-wrapper .whiteBoxOffer, .bannerTraining .swiperTrainingThumb .servCenterBG .swiper-wrapper .whiteBoxOffer, .servCenterBG .memberDetails .contextMem .aimUl .whiteBoxOffer, .memberDetails .contextMem .servCenterBG .aimUl .whiteBoxOffer, .servCenterBG .actionCaption .whiteBoxOffer {
     margin-bottom: 20px;
     min-height: auto;
   }
