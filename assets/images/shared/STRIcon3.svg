@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67.621" height="65.621" viewBox="0 0 67.621 65.621">
+  <g id="STRIcon3" transform="translate(-1459.5 -1107)">
+    <g id="Group_56878" data-name="Group 56878" transform="translate(1477.691 1123.298)">
+      <path id="Path_124616" data-name="Path 124616" d="M32.189,3.057l-12.3-2.049a.512.512,0,0,0-.168,0L7.428,3.057A.512.512,0,0,0,7,3.562v15.37c0,3.945,2.2,7.588,6.364,10.537a26.6,26.6,0,0,0,6.282,3.27.505.505,0,0,0,.324,0,26.6,26.6,0,0,0,6.282-3.27c4.161-2.949,6.364-6.592,6.364-10.537V3.562A.512.512,0,0,0,32.189,3.057Z" transform="translate(-7 -1)" fill="none" stroke="#005f61" stroke-width="3"/>
+      <path id="Path_124617" data-name="Path 124617" d="M-18652.217-5855.658l5.428,5.211,8.811-10.315" transform="translate(18658.395 5869.597)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="3"/>
+    </g>
+    <g id="Ellipse_11223" data-name="Ellipse 11223" transform="translate(1459.5 1107)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="3" stroke-dasharray="120 200">
+      <circle cx="31" cy="31" r="31" stroke="none"/>
+      <circle cx="31" cy="31" r="29.5" fill="none"/>
+    </g>
+    <path id="Path_124618" data-name="Path 124618" d="M1.2,1.412,8.268,8.5" transform="translate(1516.732 1162)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

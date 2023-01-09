@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="69.672" height="53.722" viewBox="0 0 69.672 53.722">
   <g id="eyeGreen" transform="translate(-0.715 -2.22)">
-    <path id="Path_124619" data-name="Path 124619" d="M32.813,20.616a12.2,12.2,0,1,1-12.2-12.2A12.184,12.184,0,0,1,32.813,20.616Z" transform="translate(14.935 8.478)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
-    <path id="Path_124620" data-name="Path 124620" d="M35.551,54.442c12.026,0,23.235-6.375,31.036-17.408,3.066-4.321,3.066-11.585,0-15.906C58.785,10.095,47.577,3.72,35.551,3.72S12.316,10.095,4.514,21.128c-3.066,4.321-3.066,11.585,0,15.906C12.316,48.067,23.525,54.442,35.551,54.442Z" transform="translate(0 0)" fill="none" stroke="#005f61" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_124619" data-name="Path 124619" d="M32.813,20.616a12.2,12.2,0,1,1-12.2-12.2A12.184,12.184,0,0,1,32.813,20.616Z" transform="translate(14.935 8.478)" fill="none" stroke="#c6aa76" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
+    <path id="Path_124620" data-name="Path 124620" d="M35.551,54.442c12.026,0,23.235-6.375,31.036-17.408,3.066-4.321,3.066-11.585,0-15.906C58.785,10.095,47.577,3.72,35.551,3.72S12.316,10.095,4.514,21.128c-3.066,4.321-3.066,11.585,0,15.906C12.316,48.067,23.525,54.442,35.551,54.442Z" transform="translate(0 0)" fill="none" stroke="#c6aa76" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
   </g>
 </svg>

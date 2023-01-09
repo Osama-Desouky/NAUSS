@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="mesGold" transform="translate(-468.107 -3.02)">
+    <rect id="base" width="74" height="74" transform="translate(468.107 3.02)" fill="none"/>
+    <g id="dd" transform="translate(-639.893 -542.98)">
+      <g id="Rectangle_16209" data-name="Rectangle 16209" transform="translate(1152 566)" fill="none" stroke="#c6aa76" stroke-width="3">
+        <rect width="19" height="33" rx="4" stroke="none"/>
+        <rect x="1.5" y="1.5" width="16" height="30" rx="2.5" fill="none"/>
+      </g>
+      <g id="Rectangle_16210" data-name="Rectangle 16210" transform="translate(1129 557)" fill="none" stroke="#c6aa76" stroke-width="3">
+        <rect width="26" height="36" rx="4" stroke="none"/>
+        <rect x="1.5" y="1.5" width="23" height="33" rx="2.5" fill="none"/>
+      </g>
+      <g id="Rectangle_16211" data-name="Rectangle 16211" transform="translate(1120 550)" fill="none" stroke="#c6aa76" stroke-width="3">
+        <rect width="12" height="66" rx="4" stroke="none"/>
+        <rect x="1.5" y="1.5" width="9" height="63" rx="2.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
