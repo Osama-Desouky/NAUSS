@@ -242,6 +242,36 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  let historyOf = new Swiper(".historyOf", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      700: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   let swipNewsBanner = new Swiper(".swipNewsBanner", {
     slidesPerView: 1,
     spaceBetween: 30,

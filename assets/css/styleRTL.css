@@ -762,9 +762,12 @@ input[type="date"] {
 .btnMainGold::after,
 .btnMain::after,
 .readMore2::after,
-.readMore::after, .videoPl strong::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .PLbox .hiddenTxt::after, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .NewFullBanner2 .newsSlideWarp::before,
+.readMore::after, .videoPl2 strong::after,
+.videoPl strong::after, .scrollStickyDonts a::after, .plusMin::after, .plusMin::before, .PLbox .hiddenTxt::after, .bannerHome .wrapperSlideHm::after, .compSection .capmWapper.withTxt::before, .NewFullBanner2 .newsSlideWarp::before,
 .NewFullBanner .newsSlideWarp::before, .bgGrayWithPattern::after, .eventsSec::after, .NFooter .importantlinks li a:hover::after, .bgBreadcrumb .breadcrumbCum a::after, .bannerImg2::after, .progTxtBg::after, .progTxtBg .progTxt .videoProg .videoPl, .progTxtBg .progTxt .videoProg .videoPl::after, .progTxtBg .progTxt .videoProg .videoPl strong, .markGoldP2 li::after,
-.aimUl li::after, .bannerTraining .swiperControlTraining .swiper-pagination-bullet.swiper-pagination-bullet-active::after, .PublicationInvitations .PIimg::after, .aboutPageLine .container::after, .aboutPageLine .titleAPL::after, .aboutPageLine .titleAPL::before, .contentSlider .sliderWithFansyBox .fancyboxImg::after, .shareBG .contentShare::after, .universityPresidents .UPbox::after, .universityPresidents .UPbox .fromTo .dividing::after, .OScircle::after {
+.aimUl li::after, .bannerTraining .swiperControlTraining .swiper-pagination-bullet.swiper-pagination-bullet-active::after, .PublicationInvitations .PIimg::after, .aboutPageLine .container::after, .aboutPageLine .titleAPL::after, .aboutPageLine .titleAPL::before, .contentSlider .sliderWithFansyBox .fancyboxImg::after, .shareBG .contentShare::after, .universityPresidents .UPbox::after, .universityPresidents .UPbox .fromTo .dividing::after, .OScircle::after, .organizationalStructure .ColCenter .OSH2::before, .organizationalStructure .ColCenter .OSH2::after, .organizationalStructure .OSRow2 .OSLeft::before,
+.organizationalStructure .OSRow2 .OSRight::before, .organizationalStructure .OSRow2 .OSLeft .OSH2::after,
+.organizationalStructure .OSRow2 .OSRight .OSH2::after, .organizationalStructure .OSRow3 .OScol::after, .organizationalStructure .OSRow3::after {
   position: absolute;
   content: "";
 }
@@ -1139,6 +1142,8 @@ div.ms-webpart-cell-vertical-inline-table,
   }
 }
 
+.videoPl2,
+.videoPl2 span,
 .videoPl span,
 .videoPl {
   color: #fff;
@@ -1146,6 +1151,7 @@ div.ms-webpart-cell-vertical-inline-table,
   font-family: "GretaTextArabicARLT-Regular";
 }
 
+.videoPl2 strong,
 .videoPl strong {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1165,6 +1171,7 @@ div.ms-webpart-cell-vertical-inline-table,
   position: relative;
 }
 
+.videoPl2 strong::after,
 .videoPl strong::after {
   width: 110%;
   height: 110%;
@@ -1176,11 +1183,13 @@ div.ms-webpart-cell-vertical-inline-table,
   transition: transform 1s, -webkit-transform 1s;
 }
 
+.videoPl2 strong:hover,
 .videoPl strong:hover {
   -webkit-animation: playVideo 0.5s linear 0.3s 1 forwards;
           animation: playVideo 0.5s linear 0.3s 1 forwards;
 }
 
+.videoPl2 strong:hover::after,
 .videoPl strong:hover::after {
   -webkit-animation: playVideoAfter 0.5s linear 0s 1 forwards;
           animation: playVideoAfter 0.5s linear 0s 1 forwards;
@@ -6032,6 +6041,345 @@ table tbody tr:nth-child(odd) {
   top: 3px;
   left: 3px;
   border-radius: 50%;
+}
+
+.organizationalStructure {
+  padding-top: 50px;
+}
+
+.organizationalStructure .containerOS {
+  width: 1560px;
+  max-width: unset;
+}
+
+.organizationalStructure .OSH2 {
+  width: 270px;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f8f5ef;
+  border: 2px solid #c6aa76;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "GretaTextArabicARLT-Regular";
+  color: #005f61;
+  padding: 15px 10px;
+}
+
+.organizationalStructure .ColCenter .OSH2 {
+  background: #005f61;
+  border-color: #005f61;
+  color: #fff;
+  font-family: "NAUSS-Bold";
+  margin-top: 112px;
+  border-radius: 60px;
+  position: relative;
+}
+
+.organizationalStructure .ColCenter .OSH2::before {
+  width: 1014px;
+  left: -375px;
+  height: 2px;
+  top: 42px;
+  background: #6aa1a4;
+  z-index: -1;
+}
+
+.organizationalStructure .ColCenter .OSH2::after {
+  width: 2px;
+  height: 710px;
+  top: -282px;
+  left: 133px;
+  background: #6aa1a4;
+  z-index: -1;
+}
+
+.organizationalStructure .OSRow1 {
+  text-align: center;
+  padding-bottom: 155px;
+}
+
+.organizationalStructure .OSRow1 h2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  color: #fff;
+  width: 340px;
+  height: 190px;
+  font-size: 30px;
+  font-family: "NAUSS-Bold";
+  background: transparent url(../images/shared/OSMain.svg) no-repeat;
+  position: relative;
+}
+
+.organizationalStructure .OSRow1 h2 .OScircle {
+  position: absolute;
+  bottom: -12px;
+}
+
+.organizationalStructure .OSRow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+.organizationalStructure .OSRow2 .OSLeft,
+.organizationalStructure .OSRow2 .OSRight {
+  position: relative;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OScircle,
+.organizationalStructure .OSRow2 .OSRight .OScircle {
+  position: absolute;
+  left: -164px;
+  top: 145px;
+  z-index: 2;
+}
+
+.organizationalStructure .OSRow2 .OSLeft::before,
+.organizationalStructure .OSRow2 .OSRight::before {
+  width: 32px;
+  height: 347px;
+  top: 40px;
+  left: -143px;
+  border-left: 2px solid #6aa1a4;
+  border-radius: 23px;
+  z-index: -1;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2,
+.organizationalStructure .OSRow2 .OSRight .OSH2 {
+  position: relative;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2:first-of-type::after,
+.organizationalStructure .OSRow2 .OSRight .OSH2:first-of-type::after {
+  border-top: 2px solid #6aa1a4;
+  border-bottom: 0px solid #6aa1a4;
+  border-radius: 15px 0 0 0;
+  top: 38px;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2:last-of-type::after,
+.organizationalStructure .OSRow2 .OSRight .OSH2:last-of-type::after {
+  border-radius: 0 0 0 15px;
+  top: 26px;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2::after,
+.organizationalStructure .OSRow2 .OSRight .OSH2::after {
+  width: 144px;
+  height: 15px;
+  border-bottom: 2px solid #6aa1a4;
+  left: -144px;
+  top: 26px;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OScircle {
+  right: -164px;
+  left: unset;
+}
+
+.organizationalStructure .OSRow2 .OSLeft::before {
+  right: -143px;
+  left: unset;
+  border-right: 2px solid #6aa1a4;
+  border-left: 0px solid;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2 {
+  position: relative;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2:first-of-type::after {
+  border-radius: 0 15px 0 0;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2:last-of-type::after {
+  border-radius: 0 0 15px 0;
+}
+
+.organizationalStructure .OSRow2 .OSLeft .OSH2::after {
+  right: -144px;
+  left: unset;
+}
+
+.organizationalStructure .OSRow3 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+}
+
+.organizationalStructure .OSRow3 .OScircle {
+  position: absolute;
+  left: 49.4%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -10px;
+  z-index: 2;
+}
+
+.organizationalStructure .OSRow3 .OScol {
+  position: relative;
+}
+
+.organizationalStructure .OSRow3 .OScol .OSH2:first-of-type {
+  background: #E7FCFE;
+  border-color: #005F61;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'NAUSS-Bold';
+}
+
+.organizationalStructure .OSRow3 .OScol::after {
+  right: 133px;
+  height: 100%;
+  border-right: 2px solid #6aa1a4;
+  top: -40px;
+  z-index: -1;
+}
+
+.organizationalStructure .OSRow3 .OScol.First::after {
+  right: 125px;
+  top: -40px;
+  border-radius: 20px;
+  width: 20px;
+  border-right: 2px solid #6aa1a4;
+}
+
+.organizationalStructure .OSRow3 .OScol.Last::after {
+  right: 117px;
+  top: -40px;
+  border-radius: 20px;
+  width: 20px;
+  border-right: 0px solid;
+  border-left: 2px solid #6aa1a4;
+}
+
+.organizationalStructure .OSRow3::after {
+  width: 1286px;
+  border-top: 2px solid #6aa1a4;
+  top: 0;
+  right: 125px;
+  margin: 0 auto;
+  height: 22px;
+  border-radius: 30px;
+}
+
+.organizationalStructure .OSBox {
+  width: 173px;
+  /* height: 112px; */
+  background: #E6EFEF;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 70px 0 76px;
+}
+
+.organizationalStructure .OSBox h2 {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.organizationalStructure .OSBox h2 strong {
+  width: 20px;
+  height: 20px;
+  background: #005F61;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.organizationalStructure .OSBox h2 .p3Font {
+  margin-right: 15px;
+  line-height: normal;
+}
+
+.organizationalStructure .OSBox h2.plan1 strong {
+  background: #F8F5EF;
+  border: 2px solid #C6AA76;
+}
+
+.organizationalStructure .OSBox h2.plan2 strong {
+  background: #E7FCFE;
+  border: 2px solid #005F61;
+}
+
+.organizationalStructure .OSDate {
+  border-top: 1px solid #C3D3D4;
+  padding-top: 16px;
+  text-align: left;
+  padding-bottom: 37px;
+}
+
+.organizationalStructure .OSDate .p3Font,
+.organizationalStructure .OSDate .date {
+  display: inline-block;
+}
+
+@media (max-width: 1600px) {
+  .organizationalStructure .container {
+    zoom: .8;
+  }
+}
+
+@media (max-width: 1300px) {
+  .organizationalStructure .containerOS {
+    zoom: .6;
+  }
+}
+
+@media (max-width: 992px) {
+  .organizationalStructure .scroller {
+    overflow: scroll;
+  }
+}
+
+@-moz-document url-prefix() {
+  @media (max-width: 1600px) {
+    .organizationalStructure .containerOS {
+      transform: scale(0.8);
+      transform-origin: 70% 0;
+    }
+  }
+  @media (max-width: 1300px) {
+    .organizationalStructure .containerOS {
+      transform: scale(0.6);
+      transform-origin: 70% 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
